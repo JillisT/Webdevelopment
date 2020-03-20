@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+    <list default="true" id="4884bb41-e5e2-43a3-a6c1-1ce6077bf274" name="Default Changelist" comment="login pagina link gefixt">
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/NavBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/NavBar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/NHL-Stenden-Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/pics/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ZLBkrqnz2LpcvclVvcbDSQhB0N" />
+  <component name="ProjectId" id="1ZOTrKNKZ1JDgmTCr0PVCv5PxK3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -44,54 +50,31 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="" />
-      <created>1584608639700</created>
+      <changelist id="4884bb41-e5e2-43a3-a6c1-1ce6077bf274" name="Default Changelist" comment="" />
+      <created>1584709337512</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584608639700</updated>
-      <workItem from="1584608641223" duration="749000" />
+      <updated>1584709337512</updated>
+      <workItem from="1584709339122" duration="373000" />
+      <workItem from="1584710106790" duration="190000" />
     </task>
-    <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
-      <created>1584608722094</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1584608722094</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="index aangemaakt (test of connectie is gelukt)" />
-    <option name="LAST_COMMIT_MESSAGE" value="index aangemaakt (test of connectie is gelukt)" />
+    <MESSAGE value="login pagina link gefixt" />
+    <option name="LAST_COMMIT_MESSAGE" value="login pagina link gefixt" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="693" y="277" width="528" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584609000167">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="532" y="72" width="850" height="802" key="CommitChangelistDialog2" timestamp="1584710294570">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
-    <state x="693" y="277" width="528" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584609000167" />
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2" timestamp="1584609402679">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="532" y="72" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1584710294570" />
+    <state x="555" y="211" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1584709471937">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1584609402679" />
-    <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose" timestamp="1584608789366">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose/0.0.1920.1054@0.0.1920.1054" timestamp="1584608789366" />
-    <state x="757" y="453" width="399" height="145" key="NewPhpFileDialog" timestamp="1584608653981">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state x="757" y="453" width="399" height="145" key="NewPhpFileDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584608653981" />
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1584608775971">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1584608775971" />
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1584608763149">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584608763149" />
+    <state x="555" y="211" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1584709471937" />
   </component>
 </project>
