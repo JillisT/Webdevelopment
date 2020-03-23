@@ -35,6 +35,12 @@
         <item name="DataDB" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -88,7 +94,7 @@
       <updated>1584608639700</updated>
       <workItem from="1584608641223" duration="749000" />
       <workItem from="1584710339568" duration="925000" />
-      <workItem from="1584897726154" duration="682000" />
+      <workItem from="1584897726154" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
@@ -104,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584959767711</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="index aangemaakt (test of connectie is gelukt)">
+      <created>1584960837772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584960837772</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,11 +136,11 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="693" y="277" width="528" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584609000167" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1584959767233">
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1584960837315">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1584609402679" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1584959767233" />
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1584960837315" />
     <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose" timestamp="1584608789366">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -136,10 +149,11 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="757" y="453" width="399" height="145" key="NewPhpFileDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584608653981" />
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1584608775971">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1584960841149">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1584608775971" />
+    <state x="555" y="237" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1584960841149" />
     <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584898214958">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
