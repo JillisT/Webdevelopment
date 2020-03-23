@@ -1,7 +1,7 @@
 <?php
 //connectToDatabaseAndClose.include
 $host = "localhost";
-$databaseName = "HappyBrides";
+$databaseName = "DataDB";
 $connectionString = "mysql:host=$host;dbname=$databaseName";
 $username = "student";     //root is default in most cases
 $password = "student";     //root is default in most cases
