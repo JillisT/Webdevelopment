@@ -21,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1ZOTrKNKZ1JDgmTCr0PVCv5PxK3" />
   <component name="ProjectViewState">
@@ -68,13 +69,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="login pagina link gefixt" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="532" y="72" width="850" height="802" key="CommitChangelistDialog2" timestamp="1584710294570">
-      <screen x="0" y="0" width="1920" height="949" />
+    <state x="532" y="80" width="850" height="802" key="CommitChangelistDialog2" timestamp="1584961331579">
+      <screen x="0" y="0" width="1920" height="1054" />
     </state>
+    <state x="532" y="80" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1584961331579" />
     <state x="532" y="72" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1584710294570" />
+    <state x="705" y="245" width="504" height="561" key="VCS.ChangeListViewerDialog" timestamp="1584961326492">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="705" y="245" width="504" height="561" key="VCS.ChangeListViewerDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584961326492" />
     <state x="555" y="211" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1584709471937">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="555" y="211" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1584709471937" />
+    <state x="737" y="447" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584961314465">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="737" y="447" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1054@0.0.1920.1054" timestamp="1584961314465" />
   </component>
 </project>
