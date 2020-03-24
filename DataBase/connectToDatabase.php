@@ -17,9 +17,5 @@ try {
     //echo "Connected successful";
 } catch (PDOException $ex) {
     echo "PDOException:  $ex";
-} finally {
-    if ($conn != null){
-        echo "connect succesful";
-    }
 }
 ?>

@@ -4,7 +4,7 @@
     session_start();
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
-    include "include/register.php";
+    include "include/register.script.php";
     ?>
     <title>login</title>
 </head>
@@ -29,8 +29,8 @@
                 <p>Please fill this form to create an account.</p>
                 <form action="" method="post">
                     <div class="form-group">
-                        <label>studentID</label>
-                        <input type="text" name="studentID" class="form-control" value="">
+                        <label>ID</label>
+                        <input type="text" name="ID" class="form-control" value="">
                         <span class="help-block"></span>
                     </div>
                     <div class="form-group">
@@ -42,6 +42,15 @@
                         <label>Herhaal wachtwoord</label>
                         <input type="password" name="herhaal_wachtwoord" class="form-control" value="">
                         <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>account type:</label><br>
+                        <input type="radio" id="student" name="type" value="student" checked="checked">
+                        <label for="male">Student</label><br>
+                        <input type="radio" id="SLBer" name="type" value="SLBer">
+                        <label for="female">SLB'er (Studieloopbaanbegeleider)</label><br>
+                        <input type="radio" id="decaan" name="type" value="decaan">
+                        <label for="other">Decaan</label>
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-primary" value="Submit">

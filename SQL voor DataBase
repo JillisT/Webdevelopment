@@ -5,17 +5,18 @@ Zo houden we de Databases tussen ons hetzelfde.
 Naam DB: DataDB
 Tabels: users, aanvragen
 notes:
-- toegevoegd type user (voor student, decaan, SLB'er, admin)
+- Als je wilt inloggen als administratie, maak via de site een account (ivp met hashed password) en verander in de database het type naar admin
 
 kopie dit:
 create table users
 (
-	ID int not null,
+	ID varchar(20) not null,
 	wachtwoord varchar(255) not null,
 	aanvraag_num int null,
 	type varchar(50) not null,
 	constraint users_pk
 		primary key (studentID)
 );
+
 
 

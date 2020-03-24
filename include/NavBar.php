@@ -5,8 +5,8 @@ if(isset($_SESSION["loggedin"])){
     <div class="row">
         <!-- white space met logo -->
         <div class="col-lg-2">
-            <a class="navbar-brand" href="https://www.qries.com/">
-                <img alt="Qries" src="pics/logo.png"
+            <a class="navbar-brand" href="index.php">
+                <img alt="NHL_Stenden_Logo" src="pics/logo.png"
                      width=150">
             </a>
         </div>
@@ -33,7 +33,10 @@ if(isset($_SESSION["loggedin"])){
                             <a class="nav-link" href="index.php">Kom ik in aanmerking?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="include/loguit.php">log uit</a>
+                            <a class="nav-link" href="include/loguit.script.php">log uit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ovezichtAanvragen.php">Aanvragen</a>
                         </li>
                     </ul>
                 </div>
@@ -50,8 +53,8 @@ if(isset($_SESSION["loggedin"])){
     <div class="row">
         <!-- white space met logo -->
         <div class="col-lg-2">
-            <a class="navbar-brand" href="https://www.qries.com/">
-                <img alt="Qries" src="pics/logo.png"
+            <a class="navbar-brand" href="index.php">
+                <img alt="NHL_Stenden_Logo" src="pics/logo.png"
                      width=150">
             </a>
         </div>
@@ -82,6 +85,9 @@ if(isset($_SESSION["loggedin"])){
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="register.php">Maak een account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ovezichtAanvragen.php">Aanvragen</a>
                         </li>
                     </ul>
                 </div>

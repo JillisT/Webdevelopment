@@ -25,32 +25,32 @@ if ($result->num_rows > 0) {
     header("Location: ../login.form.php?successR");
 }*/
 // Aanmaken van values
-$studentID = $wachtwoord = $herhaal_wachtwoord = "";
-$studentID_err = $wachtwoord_err = $herhaal_wachtwoord_err = "";
+$ID = $wachtwoord = $herhaal_wachtwoord = $type = "";
+$ID_err = $wachtwoord_err = $herhaal_wachtwoord_err = "";
 
 // Wanneer er op aanmelden is gedrukt
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Kijken of er iets in de email veld is ingevoerd
-    if(empty(trim($_POST["studentID"]))){
-        $studentID_err = "Voer een student id in.";
+    if(empty(trim($_POST["ID"]))){
+        $studentID_err = "Voer een id in.";
     } else{
         // SELECT statement aanmaken
-        $sql = "SELECT studentID FROM users WHERE studentID = :studentID";
+        $sql = "SELECT ID FROM users WHERE ID = :ID";
 
         if($stmt = $conn->prepare($sql)){
             // Verbind de ingevoerde tekst met de statement
-            $stmt->bindParam(":studentID", $param_studentID, PDO::PARAM_STR);
+            $stmt->bindParam(":ID", $param_ID, PDO::PARAM_STR);
 
             // Set parameters
-            $param_studentID = trim($_POST["studentID"]);
+            $param_ID = trim($_POST["ID"]);
 
             // Attempt to execute the prepared statement
             if($stmt->execute()){
                 if($stmt->rowCount() == 1){
-                    $studentID_err = "Er is al een account gekoppeld aan dit studentnummer.";
+                    $ID_err = "Er is al een account gekoppeld aan dit id-nummer.";
                 } else{
-                    $studentID = trim($_POST["studentID"]);
+                    $ID = trim($_POST["ID"]);
                 }
             } else{
                 echo "Oeps! Er is iets verkeerd gegaan. Probeer het later nog eens.";
@@ -80,21 +80,32 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
 
+    //Set account type
+
+    $type = $_POST["type"];
+    if($type = "student"){
+        $type = "student";
+    } else if ($type = "SLBer"){
+        $type = "SLBer";
+    }else $type = "decaan";
+
     // Check input errors before inserting in database
-    if(empty($studentID_err) && empty($wachtwoord_err) && empty($herhaal_wachtwoord_err)){
+    if(empty($ID_err) && empty($wachtwoord_err) && empty($herhaal_wachtwoord_err)){
 
 
         // Prepare an insert statement
-        $sql = "INSERT INTO users (studentID, wachtwoord) VALUES (:studentID, :wachtwoord)";
+        $sql = "INSERT INTO users (ID, wachtwoord, type) VALUES (:ID, :wachtwoord, :type)";
 
         if($stmt = $conn->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            $stmt->bindParam(":studentID", $param_studentID, PDO::PARAM_STR);
+            $stmt->bindParam(":ID", $param_ID, PDO::PARAM_STR);
             $stmt->bindParam(":wachtwoord", $param_wachtwoord, PDO::PARAM_STR);
+            $stmt->bindParam(":type", $param_type, PDO::PARAM_STR);
 
             // Set parameters
-            $param_studentID = $studentID;
+            $param_ID = $ID;
             $param_wachtwoord = password_hash($wachtwoord, PASSWORD_DEFAULT); // Genereerd een password hash (veilige code)
+            $param_type = $type;
 
             // Attempt to execute the prepared statement
             if($stmt->execute()){

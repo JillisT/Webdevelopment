@@ -4,11 +4,13 @@
     session_start();
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
-    include "include/loginStudent.php";
+    include "include/login.script.php";
     ?>
     <title>login</title>
 </head>
 <body>
+
+
 <!-- row start -->
 <div class="row">
     <!-- white space rechts -->
@@ -30,9 +32,9 @@
                     <h2>Login</h2>
                     <form action="" method="post">
                         <div class="form-group">
-                            <label>Student ID</label>
-                            <input type="text" name="studentID" class="form-control" value="">
-                            <span class="help-block"><?php echo $studentID_err ?></span>
+                            <label>ID</label>
+                            <input type="text" name="ID" class="form-control" value="">
+                            <span class="help-block"><?php echo $ID_err ?></span>
                         </div>
                         <div class="form-group">
                             <label>Wachtwoord</label>
