@@ -4,14 +4,18 @@ Zo houden we de Databases tussen ons hetzelfde.
 <anmaken DB>
 Naam DB: DataDB
 Tabels: users, aanvragen
+notes:
+- toegevoegd type user (voor student, decaan, SLB'er, admin)
 
-
+kopie dit:
 create table users
 (
-	studentID int not null,
+	ID int not null,
 	wachtwoord varchar(255) not null,
 	aanvraag_num int null,
+	type varchar(50) not null,
 	constraint users_pk
 		primary key (studentID)
 );
+
 
