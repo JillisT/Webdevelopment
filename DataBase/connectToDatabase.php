@@ -1,7 +1,7 @@
 <?php
 //connectToDatabaseAndClose.include
 $host = "localhost";
-$databaseName = "Profilering";
+$databaseName = "DataDB";
 $connectionString = "mysql:host=$host;dbname=$databaseName";
 $username = "student";     //root is default in most cases
 $password = "student";     //root is default in most cases
@@ -17,5 +17,9 @@ try {
     //echo "Connected successful";
 } catch (PDOException $ex) {
     echo "PDOException:  $ex";
+} finally {
+    if ($conn != null){
+        echo "connect succesful";
+    }
 }
 ?>

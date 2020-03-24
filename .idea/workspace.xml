@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="Dashboard afgemaakt">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL voor DataBase" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/loginStudent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/loguit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/connectToDatabaseAndClose.php" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/connectToDatabaseAndClose.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/connectToDatabaseAndClose.php" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/connectToDatabase.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/NavBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/NavBar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/stylesheets.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/stylesheets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +45,19 @@
         <item name="DataDB" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="users: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -57,14 +76,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:DataDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:DataDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@18eaf359" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -84,6 +113,8 @@
       <workItem from="1584608641223" duration="749000" />
       <workItem from="1584710339568" duration="925000" />
       <workItem from="1584897726154" duration="682000" />
+      <workItem from="1584966385766" duration="716000" />
+      <workItem from="1585043096426" duration="4905000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
@@ -99,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584959767711</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dashboard afgemaakt">
+      <created>1584963253875</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584963253876</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,19 +153,23 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="555" y="189" width="804" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584897982815" />
+    <state x="632" y="333" width="649" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584966987146">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="632" y="333" width="649" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1054@0.0.1920.1054" timestamp="1584966987146" />
     <state x="693" y="277" width="528" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584609000167">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="693" y="277" width="528" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584609000167" />
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2" timestamp="1584963230081">
+    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2" timestamp="1585048134877">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1584963230081" />
+    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1585048134877" />
     <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1584959767233" />
-    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl" timestamp="1584962765837">
+    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl" timestamp="1584966817997">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl/0.0.1920.1054@0.0.1920.1054" timestamp="1584962765837" />
+    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl/0.0.1920.1054@0.0.1920.1054" timestamp="1584966817997" />
     <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose" timestamp="1584608789366">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -136,33 +178,37 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state width="256" height="477" key="HiddenNamespacesPopup/0.0.1920.1054@0.0.1920.1054" timestamp="1584961367883" />
-    <state x="757" y="453" width="399" height="145" key="NewPhpFileDialog" timestamp="1584608653981">
+    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog" timestamp="1585046402901">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="757" y="453" width="399" height="145" key="NewPhpFileDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584608653981" />
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1584608775971">
+    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585046402901" />
+    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1584963265585">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1584608775971" />
+    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1584963265585" />
     <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1584961852979">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1054@0.0.1920.1054" timestamp="1584961852979" />
-    <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584898214958">
+    <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585046777995">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584898214958" />
-    <state x="813" y="421" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584961591340">
+    <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585046777995" />
+    <state x="813" y="421" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584966800534">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="813" y="421" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584961591340" />
+    <state x="813" y="421" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584966800534" />
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584897567175">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.949@0.0.1920.949" timestamp="1584897567175" />
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1584710571330">
+    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1585043274667">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584710571330" />
+    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585043274667" />
+    <state x="623" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1584966406738">
+      <screen x="0" y="0" width="1920" height="949" />
+    </state>
+    <state x="623" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1920.949@0.0.1920.949" timestamp="1584966406738" />
   </component>
 </project>

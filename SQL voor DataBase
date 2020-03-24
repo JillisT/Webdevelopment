@@ -1,0 +1,17 @@
+Hier worden alle SQL queries ingezet zodat ze makkelijk te copieen en plakken zijn.password
+Zo houden we de Databases tussen ons hetzelfde.
+
+<anmaken DB>
+Naam DB: DataDB
+Tabels: users, aanvragen
+
+
+create table users
+(
+	studentID int not null,
+	wachtwoord varchar(255) not null,
+	aanvraag_num int null,
+	constraint users_pk
+		primary key (studentID)
+);
+

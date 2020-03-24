@@ -2,9 +2,11 @@
 <html class="no-js" lang="en">
 <head>
     <?php
+    session_start();
     require "include/stylesheets.php";
+    include "DataBase/connectToDatabase.php";
     ?>
-    <title>Home</title>
+    <title>dashboard</title>
 </head>
 
 <body>
