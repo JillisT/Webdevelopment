@@ -29,7 +29,15 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
-                    <h2>Login</h2>
+                    <h2>Inloggen</h2>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" align="right">
+                            <i class="fa fa-info-circle"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" > Vraag aan je decaan om een account aan te maken</a>
+                        </div>
+                    </div>
                     <form action="" method="post">
                         <div class="form-group">
                             <label>ID</label>
