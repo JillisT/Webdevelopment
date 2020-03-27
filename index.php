@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <?php
+    session_start();
     require "include/stylesheets.php";
     ?>
     <title>Home</title>
