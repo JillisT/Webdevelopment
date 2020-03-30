@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="Dashboard afgemaakt">
-      <change afterPath="$PROJECT_DIR$/ovezichtAanvragen.php" afterDir="false" />
+    <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/include/aanvraagAanmaken.script.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/aanvraagVerwijderen.script.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/connectToDatabase.php" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/connectToDatabase.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SQL voor DataBase" beforeDir="false" afterPath="$PROJECT_DIR$/SQL voor DataBase" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/NavBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/NavBar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/loginStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/login.script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/loguit.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/loguit.script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/register.script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/login.script.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/login.script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/register.script.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/register.script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ovezichtAanvragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/ovezichtAanvragen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,13 +50,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="users: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -75,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Happy Brides" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -90,7 +83,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:DataDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@640a7537" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7e0f66ee" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -115,7 +108,10 @@
       <workItem from="1584966385766" duration="716000" />
       <workItem from="1585043096426" duration="4905000" />
       <workItem from="1585052980898" duration="4259000" />
-      <workItem from="1585057285568" duration="100000" />
+      <workItem from="1585057285568" duration="170000" />
+      <workItem from="1585130549761" duration="31000" />
+      <workItem from="1585142597981" duration="3327000" />
+      <workItem from="1585562964166" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
@@ -145,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585054957369</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Admin kan inloggen en heeft haar eigen dashbord. (overzichAanvragen.php)">
+      <created>1585057437637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585057437637</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +158,8 @@
     <MESSAGE value="index aangemaakt (test of connectie is gelukt)" />
     <MESSAGE value="Dashboard afgemaakt" />
     <MESSAGE value="Databse aangepast (opnieuw aanmaken als je al een had gemaakt)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Databse aangepast (opnieuw aanmaken als je al een had gemaakt)" />
+    <MESSAGE value="Admin kan inloggen en heeft haar eigen dashbord. (overzichAanvragen.php)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin kan inloggen en heeft haar eigen dashbord. (overzichAanvragen.php)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="804" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584897982815">
@@ -170,59 +174,67 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="693" y="277" width="528" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584609000167" />
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2" timestamp="1585054957154">
+    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2" timestamp="1585057437242">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1585054957154" />
+    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1585057437242" />
     <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1584959767233" />
-    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl" timestamp="1585055870694">
+    <state x="184" y="89" width="1540" height="870" key="DiffContextDialog" timestamp="1585563179017">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl/0.0.1920.1054@0.0.1920.1054" timestamp="1585055870694" />
+    <state x="184" y="89" width="1540" height="870" key="DiffContextDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563179017" />
+    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl" timestamp="1585143771829">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl/0.0.1920.1054@0.0.1920.1054" timestamp="1585143771829" />
     <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose" timestamp="1584608789366">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose/0.0.1920.1054@0.0.1920.1054" timestamp="1584608789366" />
-    <state width="1294" height="281" key="GridCell.Tab.0.bottom" timestamp="1585053588052">
+    <state width="1294" height="281" key="GridCell.Tab.0.bottom" timestamp="1585562989309">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1054@0.0.1920.1054" timestamp="1585053588052" />
-    <state width="1294" height="281" key="GridCell.Tab.0.center" timestamp="1585053588051">
+    <state width="1294" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1054@0.0.1920.1054" timestamp="1585562989309" />
+    <state width="1294" height="281" key="GridCell.Tab.0.center" timestamp="1585562989308">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.center/0.0.1920.1054@0.0.1920.1054" timestamp="1585053588051" />
-    <state width="1294" height="281" key="GridCell.Tab.0.left" timestamp="1585053588046">
+    <state width="1294" height="281" key="GridCell.Tab.0.center/0.0.1920.1054@0.0.1920.1054" timestamp="1585562989308" />
+    <state width="1294" height="281" key="GridCell.Tab.0.left" timestamp="1585562989307">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.left/0.0.1920.1054@0.0.1920.1054" timestamp="1585053588046" />
-    <state width="1294" height="281" key="GridCell.Tab.0.right" timestamp="1585053588051">
+    <state width="1294" height="281" key="GridCell.Tab.0.left/0.0.1920.1054@0.0.1920.1054" timestamp="1585562989307" />
+    <state width="1294" height="281" key="GridCell.Tab.0.right" timestamp="1585562989308">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1585053588051" />
+    <state width="1294" height="281" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1585562989308" />
     <state width="256" height="477" key="HiddenNamespacesPopup" timestamp="1584961367883">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state width="256" height="477" key="HiddenNamespacesPopup/0.0.1920.1054@0.0.1920.1054" timestamp="1584961367883" />
-    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog" timestamp="1585055011875">
+    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog" timestamp="1585563025333">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585055011875" />
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1585054963796">
+    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563025333" />
+    <state x="708" y="239" width="493" height="570" key="RollbackChangesDialog" timestamp="1585563185976">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1585054963796" />
-    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1584961852979">
+    <state x="708" y="239" width="493" height="570" key="RollbackChangesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563185976" />
+    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1585057443368">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1054@0.0.1920.1054" timestamp="1584961852979" />
+    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1585057443368" />
+    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585143471214">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1054@0.0.1920.1054" timestamp="1585143471214" />
     <state x="721" y="356" width="471" height="335" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1585054507718">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="721" y="356" width="471" height="335" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585054507718" />
-    <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585055106412">
+    <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585144652428">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585055106412" />
+    <state x="679" y="253" width="556" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585144652428" />
     <state x="813" y="421" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1584966800534">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -231,10 +243,14 @@
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.949@0.0.1920.949" timestamp="1584897567175" />
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1585043274667">
+    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1585563195860">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585043274667" />
+    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563195860" />
+    <state x="622" y="241" key="run.anything.popup" timestamp="1585142603777">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="622" y="241" key="run.anything.popup/0.0.1920.1054@0.0.1920.1054" timestamp="1585142603777" />
     <state x="623" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1584966406738">
       <screen x="0" y="0" width="1920" height="949" />
     </state>

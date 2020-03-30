@@ -30,19 +30,11 @@
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
                     <h2>Inloggen</h2>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" align="right">
-                            <i class="fa fa-info-circle"></i>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" > Vraag aan je decaan om een account aan te maken</a>
-                        </div>
-                    </div>
                     <form action="" method="post">
                         <div class="form-group">
-                            <label>ID</label>
-                            <input type="text" name="ID" class="form-control" value="">
-                            <span class="help-block"><?php echo $ID_err ?></span>
+                            <label>Gebruikersnaam</label>
+                            <input type="text" name="gebruikersnaam" class="form-control" value="">
+                            <span class="help-block"><?php echo $gebruikersnaam_err ?></span>
                         </div>
                         <div class="form-group">
                             <label>Wachtwoord</label>

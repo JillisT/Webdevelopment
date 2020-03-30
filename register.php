@@ -25,23 +25,22 @@
             ?>
             <!-- container body start -->
             <div class="wrapper">
-                <h2>Sign Up</h2>
-                <p>Please fill this form to create an account.</p>
+                <h2>Account aanmaken</h2>
                 <form action="" method="post">
                     <div class="form-group">
-                        <label>ID</label>
-                        <input type="text" name="ID" class="form-control" value="">
-                        <span class="help-block"></span>
+                        <label>Gebruikersnaam</label>
+                        <input type="text" name="gebruikersnaam" class="form-control" value="">
+                        <span class="help-block"><?php echo $gebruikersnaam_err ?></span>
                     </div>
                     <div class="form-group">
                         <label>Wachtwoord</label>
                         <input type="password" name="wachtwoord" class="form-control" value="">
-                        <span class="help-block"></span>
+                        <span class="help-block"><?php echo $wachtwoord_err ?></span>
                     </div>
                     <div class="form-group">
                         <label>Herhaal wachtwoord</label>
                         <input type="password" name="herhaal_wachtwoord" class="form-control" value="">
-                        <span class="help-block"></span>
+                        <span class="help-block"><?php echo $herhaal_wachtwoord_err ?></span>
                     </div>
                     <div class="form-group">
                         <label>account type:</label><br>

@@ -10,13 +10,62 @@ notes:
 kopie dit:
 create table users
 (
-	ID varchar(20) not null,
-	wachtwoord varchar(255) not null,
-	aanvraag_num int null,
-	type varchar(50) not null,
-	constraint users_pk
-		primary key (studentID)
+  ID int auto_increment not null primary key,
+  gebruikersnaam varchar(255) not null,
+  wachtwoord varchar(255) not null,
+  aanvraag_num int null,
+  type varchar(50) not null
 );
 
+Create table student
+(
+    studentnummer int unsigned primary key not null,
+    persoonsgegevens varchar(1000),
+    omstandigheden varchar(1000),
+    klassennaam varchar(30),
+    naam_slb varchar(30),
+    opleidingscode varchar(30),
+    naam_decaan varchar(30)
+);
+
+create table klas
+(
+    klassennaam varchar(30) primary key,
+    naam_slb varchar(30)
+);
+
+create table slb
+(
+    naam_slb varchar(30) primary key,
+    extra_info varchar(500),
+    handtekening_slb varchar(100)
+
+);
+
+create table opleiding
+(
+    opleidingscode varchar(30) primary key,
+    naam_opleiding varchar(1000),
+    opleidingsvarianten varchar(1000),
+    naam_decaan varchar(30)
+);
+
+create table decaan
+(
+    naam_decaan varchar(30) primary key,
+    vragenlijst_decaan varchar(1000),
+    handtekening_decaan varchar(1000)
+);
+
+alter table student
+add foreign key (klassennaam) references klas(klassennaam),
+add foreign key (naam_slb) references slb(naam_slb),
+add foreign key (opleidingscode) references opleiding(opleidingscode),
+add foreign key (naam_decaan) references decaan(naam_decaan);
 
 
+alter table klas
+add foreign key (naam_slb) references slb(naam_slb);
+
+alter table opleiding
+add foreign key (naam_decaan) references decaan(naam_decaan);

@@ -1,8 +1,8 @@
 <?php
 include "DataBase/connectToDatabase.php";
 session_start();
-if (isset($_SESSION["admin"])) {
-    header("location: index.php");
+if (!isset($_SESSION["type"]) === "admin") {
+    header("location: dashboard.php");
 } else { ?>
 
     <html>

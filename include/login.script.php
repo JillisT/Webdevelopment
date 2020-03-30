@@ -6,17 +6,17 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 }
 
 // Define variables and initialize with empty values
-$ID = $wachtwoord = "";
-$ID_err = $wachtwoord_err = "";
+$gebruikersnaam = $wachtwoord = "";
+$gebruikersnaam_err = $wachtwoord_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check if username is empty
-    if (empty(trim($_POST["ID"]))) {
-        $ID_err  = "Vul je id in.";
+    if (empty(trim($_POST["gebruikersnaam"]))) {
+        $gebruikersnaam_err  = "Vul je gebruikersnaam in.";
     } else {
-        $ID = trim($_POST["ID"]);
+        $gebruikersnaam = trim($_POST["gebruikersnaam"]);
     }
 
     // Check if password is empty
@@ -27,17 +27,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Validate credentials
-    if (empty($ID_err) && empty($wachtwoord_err)) {
+    if (empty($gebruikersnaam_err) && empty($wachtwoord_err)) {
         // Prepare a select statement
-        $sql = "SELECT ID, wachtwoord, type FROM users WHERE ID = :ID";
+        $sql = "SELECT ID, gebruikersnaam, wachtwoord, type FROM users WHERE gebruikersnaam = :gebruikersnaam";
 
         if ($stmt = $conn->prepare($sql)) {
             // Bind variables to the prepared statement as parameters
-            $stmt->bindParam(":ID", $param_ID, PDO::PARAM_STR);
+            $stmt->bindParam(":gebruikersnaam", $param_gebruikersnaam, PDO::PARAM_STR);
 
 
             // Set parameters
-            $param_ID = trim($_POST["ID"]);
+            $param_gebruikersnaam = trim($_POST["gebruikersnaam"]);
 
             // Attempt to execute the prepared statement
             if ($stmt->execute()) {
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     }
                 } else {
                     // Display an error message if username doesn't exist
-                    $ID_err = "Er is geen account voor dit id";
+                    $gebruikersnaam_err = "Er is geen account voor deze gebruikersnaam";
                 }
             } else {
                 echo "Er is iets fout gegaan. Probeer het later nog eens.";
