@@ -33,7 +33,7 @@
 
                         <br>
                         <label>Sta jij op dit moment ingeschreven bij NHL Stenden?</label>
-                        <select class="form-control" name="inschrijving" required>
+                        <select class="form-control <?php echo (!empty($leeg1_err)) ? 'has-error' : ''; ?>" name="inschrijving" required>
                             <option>Select option:</option>
                             <option>Ja</option>
                             <option>Nee</option>
@@ -41,7 +41,7 @@
 
                         <br>
                         <label>Voor welke opleiding sta jij op dit moment ingeschreven?</label>
-                        <select class="form-control" name="opleiding" required>
+                        <select class="form-control <?php echo (!empty($leeg2_err)) ? 'has-error' : ''; ?>" name="opleiding" required>
                             <option>Select option:</option>
                             <option> .opleiding sample. </option>
                             <option> ..opleiding sample.. </option>
@@ -50,7 +50,7 @@
 
                         <br>
                         <label>Welke opleidingvariant volg jij?</label>
-                        <select class="form-control" name="opleidingvar" required>
+                        <select class="form-control <?php echo (!empty($leeg3_err)) ? 'has-error' : ''; ?>" name="opleidingvar" required>
                             <option>Select option:</option>
                             <option> Voltijd </option>
                             <option> Deeltijd </option>
@@ -65,7 +65,7 @@
 
                         <br>
                         <label>Welke studiejaar zit jij?</label>
-                        <select class="form-control" name="studiejaar" required>
+                        <select class="form-control <?php echo (!empty($leeg4_err)) ? 'has-error' : ''; ?>" name="studiejaar" required>
                             <option>Select option:</option>
                             <option> 1 </option>
                             <option> 2 </option>
@@ -76,7 +76,7 @@
 
                         <br>
                         <label>Heb je de studie tussendoor onderbroken?</label>
-                        <select class="form-control" name="onderbr" required>
+                        <select class="form-control <?php echo (!empty($leeg5_err)) ? 'has-error' : ''; ?>" name="onderbr" required>
                             <option>Select option:</option>
                             <option> Ja </option>
                             <option> Nee </option>
@@ -84,7 +84,7 @@
 
                         <br>
                         <label>Heb jij je gedurende de studieonderbreking ook uitgeschreven bij NHL Stenden?</label>
-                        <select class="form-control" name="uitschr" required>
+                        <select class="form-control <?php echo (!empty($leeg6_err)) ? 'has-error' : ''; ?>" name="uitschr" required>
                             <option>Select option:</option>
                             <option> Ja </option>
                             <option> Nee </option>
@@ -94,15 +94,47 @@
                         <label>Als jij voor andere studies ingeschreven hebt gestaan bij NHL Stenden schrijf hier welke studie(s) dit waren.</label>
                         <label>(Als dit niet van toepassing is laat je dit veld leeg!)</label>
                         <div class="form-group">
-                            <input type="text" name="andereopl" class="form-control" placeholder="Andere opleiding(en)" required>
+                            <input type="text" name="andereopl" class="form-control" placeholder="Andere opleiding(en)">
                         </div>
 
                         <br>
                         <label>Als je voor andere HBO/Universiteit studies ingeschreven hebt gestaan bij andere instelling(en) schrijf hier dan de instelling, opleiding en datum van studie.) </label>
                         <label>(Als dit niet van toepassing is laat je dit veld leeg!)</label>
                         <div class="form-group">
-                            <input type="text" name="andereopl2" class="form-control" placeholder="Andere opleiding(en)" required>
+                            <input type="text" name="andereopl2" class="form-control" placeholder="Andere opleiding(en)">
                         </div>
+
+                        <br>
+                        <label>Wat is de reden van studievertraging?</label>
+                        <select class="form-control <?php echo (!empty($studvertr_err)) ? 'has-error' : ''; ?>" name="studvertr" required>
+                            <option>Select option:</option>
+                            <option>Ziekte of zwangerschap en bevalling</option>
+                            <option>Een functiestoornis, handicap of chronische ziekte</option>
+                            <option>Bijzondere familieomstandigheden</option>
+                            <option> Een onvoldoende studeerbare opleiding</option>
+                            <option>De door de hogeschool toegekende status van topsporter</option>
+
+                            <!-- dit moet korter!!! -->
+                            <option>Andere dan de in de hierboven genoemde onderdelen bedoelde omstandigheden die, indien
+                                een daarop gebaseerd verzoek om financiële ondersteuning door het College van Bestuur niet
+                                zou worden gehonoreerd, zouden leiden tot een onbillijkheid van overwegende aard</option>
+                            <!--  -->
+
+                            <option>Activiteiten op bestuurlijk of maatschappelijk gebied die naar het oordeel van het College van
+                                Bestuur mede in het belang zijn van de hogeschool of van het onderwijs dat de student volgt</option>
+                        </select>
+
+                        <?php
+                        include "vragennav.php";
+                        ?>
+
+
+
+
+
+                        <label> NB: Studenten die bestuurslid zijn van een erkende studentenvereniging, zoals benoemd in
+                            Regeling Profileringsfonds, Artikel 4.1 lid 2a worden via hun erkende studentenverenging
+                            geïnformeerd over hoe ze aanspraak kunnen maken op financiële ondersteuning. </label>
 
 
                         <div class="form-group">
