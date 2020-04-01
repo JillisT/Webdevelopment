@@ -8,6 +8,11 @@ notes:
 - Als je wilt inloggen als administratie, maak via de site een account (ivp met hashed password) en verander in de database het type naar admin
 
 kopie dit:
+
+create schema DataDB;
+
+use DataDB;
+
 create table users
 (
   ID int auto_increment not null primary key,
