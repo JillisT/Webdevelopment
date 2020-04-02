@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/NavBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/NavBar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/aanvraagAanmaken.script.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/aanvraagAanmaken.script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/aanvraagVerwijderen.script.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/aanvraagVerwijderen.script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/login.script.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/login.script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vragenform/opleidingsgegevens.php" beforeDir="false" afterPath="$PROJECT_DIR$/opleidingsgegevens.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vragenform/persoonsgegevens.php" beforeDir="false" afterPath="$PROJECT_DIR$/persoonsgegevens.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +107,7 @@
       <workItem from="1585130549761" duration="31000" />
       <workItem from="1585142597981" duration="3327000" />
       <workItem from="1585562964166" duration="7172000" />
-      <workItem from="1585812483451" duration="237000" />
+      <workItem from="1585812483451" duration="1225000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
@@ -158,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585563240022</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Contact aangemaakt">
+      <created>1585812781263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585812781263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +170,8 @@
     <MESSAGE value="Databse aangepast (opnieuw aanmaken als je al een had gemaakt)" />
     <MESSAGE value="Admin kan inloggen en heeft haar eigen dashbord. (overzichAanvragen.php)" />
     <MESSAGE value="Login aangepast" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login aangepast" />
+    <MESSAGE value="Contact aangemaakt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact aangemaakt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="189" width="804" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585563505817">
@@ -185,15 +186,15 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="693" y="277" width="528" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584609000167" />
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2" timestamp="1585812746695">
+    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2" timestamp="1585812781020">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1585812746695" />
+    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1585812781020" />
     <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1584959767233" />
-    <state x="184" y="89" width="1540" height="870" key="DiffContextDialog" timestamp="1585812680783">
+    <state x="184" y="89" width="1540" height="870" key="DiffContextDialog" timestamp="1585812847177">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="184" y="89" width="1540" height="870" key="DiffContextDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585812680783" />
+    <state x="184" y="89" width="1540" height="870" key="DiffContextDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585812847177" />
     <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl" timestamp="1585568996572">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -230,10 +231,10 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="708" y="239" width="493" height="570" key="RollbackChangesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563185976" />
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1585563247248">
+    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1585812793855">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1585563247248" />
+    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1585812793855" />
     <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585143471214">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -254,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.949@0.0.1920.949" timestamp="1584897567175" />
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1585812696962">
+    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1585812856923">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585812696962" />
+    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585812856923" />
     <state x="622" y="241" key="run.anything.popup" timestamp="1585142603777">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>

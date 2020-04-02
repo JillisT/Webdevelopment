@@ -2,10 +2,10 @@
 <html class="no-js" lang="en">
 <head>
     <?php
-    if(isset($_SESSION["loggedin"]) !== true){
+    session_start();
+    if(!isset($_SESSION["loggedin"])){
         header("location: index.php");
     }
-    session_start();
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
     ?>
