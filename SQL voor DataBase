@@ -69,3 +69,5 @@ add foreign key (naam_slb) references slb(naam_slb);
 
 alter table opleiding
 add foreign key (naam_decaan) references decaan(naam_decaan);
+
+alter table users modify aanvraag_num int(15) null;

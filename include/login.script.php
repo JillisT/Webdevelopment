@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $id = $row["ID"];
                         $hashed_wachtwoord = $row["wachtwoord"];
                         $type = $row["type"];
+                        $gebruikersnaam = $row["gebruikersnaam"];
                         if (password_verify($wachtwoord, $hashed_wachtwoord)) {
                             // Password is correct, so start a new session
                             session_start();
@@ -55,6 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["loggedin"] = true;
                             $_SESSION["ID"] = $id;
                             $_SESSION["type"] = $type;
+                            $_SESSION["gebruikersnaam"] = $gebruikersnaam;
                             
                             // Redirect user to welcome page
                             header("location: dashboard.php");
