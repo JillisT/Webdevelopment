@@ -22,55 +22,128 @@ create table users
   type varchar(50) not null
 );
 
-Create table student
+create table student
 (
-    studentnummer int unsigned primary key not null,
-    persoonsgegevens varchar(1000),
-    omstandigheden varchar(1000),
-    klassennaam varchar(30),
-    naam_slb varchar(30),
-    opleidingscode varchar(30),
-    naam_decaan varchar(30)
+    studentnummer      int unsigned not null
+        primary key,
+    achternaam         tinytext     null,
+    roepnaam           tinytext     null,
+    klassennaam        varchar(30)  null,
+    geboortedatum      date         null,
+    adres              varchar(30)  null,
+    postcode           varchar(30)  null,
+    woonplaats         tinytext     null,
+    telefoonnummer     int          null,
+    email              varchar(30)  null,
+    bsn                int          null,
+    iban               varchar(30)  null,
+    ingeschreven       binary(1)    null,
+    opleidingscode     varchar(30)  null,
+    opleidingsvariant  tinytext     null,
+    startjaar          int          null,
+    studiejaar         int          null,
+    onderbroken        binary(1)    null,
+    uitgeschreven      binary(1)    null,
+    andere_studie      binary(1)    null,
+    naam_andere_studie tinytext     null,
+    naam_decaan        varchar(30)  null
+
+
 );
 
-create table klas
+create table omstandigheden
 (
-    klassennaam varchar(30) primary key,
-    naam_slb varchar(30)
+    studentnummer            int      unsigned not null
+        primary key,
+    reden                    tinytext  null,
+    studievertraging         int       null,
+    duo_stelsel              tinytext  null,
+    recht_extra_financiering binary(1) null,
+    financiering_ingegaan    date      null,
+    ondersteuning_gehad      binary(1) null,
+    ondersteuning_duur       int       null,
+    ondersteuning_jaar       int       null,
+    toelichting              text      null,
+    wanneer                  text      null,
+    melding_decaan           date      null,
+    melding_slb              date      null,
+    afmelding_decaan         date      null,
+    afmelding_slb            date      null,
+    studieonderdelen         text      null,
+    duur_vertraging          int       null,
+    invloed_omstandigheden   text      null,
+    beperken_omstandigheden  text      null,
+    aanvraag_duur            int       null,
+    handtekening_plaats      tinytext  null,
+    handtekening_datum       date      null,
+
+    constraint student_ibfk_1
+        foreign key (studentnummer) references student (studentnummer)
+
+);
+
+
+create table decaan
+(
+    naam_student        tinytext    null,
+    studentnummer int unsigned primary key not null ,
+    opleiding           tinytext    null,
+    naam_decaan         tinytext    null,
+    datum_melding       date        null,
+    omstandigheden      tinytext    null,
+    begindatum          date        null,
+    einddatum           date        null,
+    toelichting         text        null,
+    advies_duur         text        null,
+    handtekening_plaats tinytext    null,
+    handtekening_datum  date        null,
+
+    constraint student_ibfk_2
+        foreign key (studentnummer) references student (studentnummer)
 );
 
 create table slb
 (
-    naam_slb varchar(30) primary key,
-    extra_info varchar(500),
-    handtekening_slb varchar(100)
+    naam_student        tinytext    null,
+    studentnummer int unsigned primary key not null ,
+    opleiding           tinytext    null,
+    begindatum date null,
+    einddatum date null,
+    duur int null,
+    ec_mogelijk int null,
+    ec_behaald int null ,
+    ec_totaal int null,
+    ec_nog_nodig int null,
+    tijd_nodig int null,
+    mogelijkheden_gezakt tinytext null,
+    extra_info text null,
+    handtekening_datum date null ,
+    handtekening_naam tinytext null ,
+    handtekening_functie tinytext null ,
 
+  constraint student_ibfk_3
+      foreign key (studentnummer) references student (studentnummer)
 );
 
-create table opleiding
+create table studievoortgang
 (
-    opleidingscode varchar(30) primary key,
-    naam_opleiding varchar(1000),
-    opleidingsvarianten varchar(1000),
-    naam_decaan varchar(30)
+    studentnummer int unsigned primary key not null ,
+    ec_jaar1 int ,
+    jaar1 int,
+    ec_jaar2 int ,
+    jaar2 int,
+    ec_jaar3 int ,
+    jaar3 int,
+    ec_jaar4 int ,
+    jaar4 int,
+    ec_jaar5 int ,
+    jaar5 int,
+    ec_jaar6 int ,
+    jaar6 int,
+    ec_jaar7 int ,
+    jaar7 int,
+
+        constraint student_ibfk_4
+        foreign key (studentnummer) references student (studentnummer)
 );
 
-create table decaan
-(
-    naam_decaan varchar(30) primary key,
-    vragenlijst_decaan varchar(1000),
-    handtekening_decaan varchar(1000)
-);
-
-alter table student
-add foreign key (klassennaam) references klas(klassennaam),
-add foreign key (naam_slb) references slb(naam_slb),
-add foreign key (opleidingscode) references opleiding(opleidingscode),
-add foreign key (naam_decaan) references decaan(naam_decaan);
-
-
-alter table klas
-add foreign key (naam_slb) references slb(naam_slb);
-
-alter table opleiding
-add foreign key (naam_decaan) references decaan(naam_decaan);
