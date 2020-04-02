@@ -24,7 +24,7 @@ if (isset($_SESSION["loggedin"])) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <?php
-                        if (isset($_SESSION["type"]) === "admin") {
+                        if (isset($_SESSION["type"]) !== "admin") {
                             ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="dashboard.php">Dashboard</a>
@@ -60,6 +60,9 @@ if (isset($_SESSION["loggedin"])) {
                             <?php
                         }
                         ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="include/loguit.script.php">log uit</a>
                         </li>
@@ -101,6 +104,9 @@ if (isset($_SESSION["loggedin"])) {
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">Kom ik in aanmerking?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.php">Log in</a>

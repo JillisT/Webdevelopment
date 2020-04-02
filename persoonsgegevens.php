@@ -2,8 +2,8 @@
 <head>
     <?php
     session_start();
-    require "../include/stylesheets.php";
-//    include "DataBase/connectToDatabase.php";
+    require "include/stylesheets.php";
+    include "DataBase/connectToDatabase.php";
     ?>
     <title>Opleidingsgegevens</title>
 </head>
@@ -22,7 +22,7 @@
         <div class="container-fluid">
 
             <?php
-            require "../include/NavBar.php";
+            require "include/NavBar.php";
             ?>
             <!--login table start-->
             <div class="row">
@@ -35,7 +35,7 @@
                         <div class="form-group">
                             <label>Student nummer: </label>
                             <input type="text" name="studentnum" class="form-control" placeholder="Studentnummer" required>
-                            <span class="help-block"><?php echo $studentnum_err ?></span>
+                            <span class="help-block"></span>
                         </div>
                         <br>
                         <div class="form-group">
