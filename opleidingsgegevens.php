@@ -2,8 +2,9 @@
 <head>
     <?php
     session_start();
-    require "../include/stylesheets.php";
-//    include "/Webdevelopmentproject/DataBase/connectToDatabase.php";
+    require "include/stylesheets.php";
+    include "DataBase/connectToDatabase.php";
+    
     ?>
     <title>Persoonsgegevens</title>
 </head>
@@ -22,14 +23,14 @@
         <div class="container-fluid">
 
             <?php
-            require "../include/NavBar.php";
+            require "include/NavBar.php";
             ?>
             <!--login table start-->
             <div class="row">
                 <div class="col-lg-6"></div>
                 <div class="wrapper col-sm-8 col-md-12" style="margin-top: 50px;">
                     <h2>Opleidingsgegevens</h2>
-                    <form action="" method="post">
+                    <form action="Datascripts/add.php" method="post">
 
                         <br>
                         <label>Sta jij op dit moment ingeschreven bij NHL Stenden?</label>
