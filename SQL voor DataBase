@@ -36,7 +36,11 @@ create table student
     telefoonnummer     int          null,
     email              varchar(30)  null,
     bsn                int          null,
-    iban               varchar(30)  null,
+    iban               varchar(30)  null
+);
+
+create table opleiding
+(
     ingeschreven       binary(1)    null,
     opleidingscode     varchar(30)  null,
     opleidingsvariant  tinytext     null,
@@ -46,16 +50,14 @@ create table student
     uitgeschreven      binary(1)    null,
     andere_studie      binary(1)    null,
     naam_andere_studie tinytext     null,
-    naam_decaan        varchar(30)  null
-
-
+    naam_decaan        varchar(30)  null,
+    reden              tinytext     null
 );
 
 create table omstandigheden
 (
     studentnummer            int      unsigned not null
         primary key,
-    reden                    tinytext  null,
     studievertraging         int       null,
     duo_stelsel              tinytext  null,
     recht_extra_financiering binary(1) null,
@@ -146,4 +148,9 @@ create table studievoortgang
         constraint student_ibfk_4
         foreign key (studentnummer) references student (studentnummer)
 );
+
+
+
+
+
 

@@ -5,7 +5,7 @@
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
     ?>
-    <title>Opleidingsgegevens</title>
+    <title>Persoonsgevens</title>
 </head>
 <body>
 
@@ -28,13 +28,13 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
-                    <h2>Login</h2>
-                    <form action="" method="post">
+                    <h2>Gegevens</h2>
+                    <form action="Datascripts/addpersoonsgegevens.php" method="post">
 
                         <br>
                         <div class="form-group">
                             <label>Student nummer: </label>
-                            <input type="text" name="studentnum" class="form-control" placeholder="Studentnummer" required>
+                            <input type="number" name="studentnum" class="form-control" placeholder="Studentnummer" required>
                             <span class="help-block"></span>
                         </div>
                         <br>
@@ -49,13 +49,24 @@
                         </div>
                         <br>
                         <div class="form-group">
-                            <label>Geboortedatum:</label>
-                            <input type="date" name="geboortedatum" class="form-control" placeholder="Geboortedatum" required>
+                            <label>Klas:</label>
+                            <input type="text" name="klas" class="form-control" placeholder="Klas" required>
                         </div>
                         <br>
-                        <label>Woonplaats:</label>
+<!--                        <div class="form-group">-->
+<!--                            <label>Geboortedatum:</label>-->
+<!--                            <input type="date" name="geboortedatum" class="form-control" placeholder="Geboortedatum" required>-->
+<!--                        </div>-->
+<!--                        <br>-->
+                        <br>
                         <div class="form-group">
-                            <input type="text" name="Woonplaats" class="form-control" placeholder="Woonplaats" required>
+                            <label>Geboortedatum:</label>
+                            <input type="text" name="geboortedatum" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                        </div>
+                        <label>Adres:</label>
+                        <div class="form-group">
+                            <input type="text" name="adres" class="form-control" placeholder="Adres" required>
                         </div>
                         <br>
                         <div class="form-group">
@@ -80,7 +91,7 @@
                         <br>
                         <br>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Submit">
+                            <input type="submit" class="btn btn-primary" value="Opslaan" >
                         </div>
                     </form>
                 </div>

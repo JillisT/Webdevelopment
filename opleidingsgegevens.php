@@ -6,7 +6,7 @@
     include "DataBase/connectToDatabase.php";
     
     ?>
-    <title>Persoonsgegevens</title>
+    <title>Opleidingsgegevens</title>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
                 <div class="col-lg-6"></div>
                 <div class="wrapper col-sm-8 col-md-12" style="margin-top: 50px;">
                     <h2>Opleidingsgegevens</h2>
-                    <form action="Datascripts/add.php" method="post">
+                    <form action="Datascripts/addpersoonsgegevens.php" method="post">
 
                         <br>
                         <label>Sta jij op dit moment ingeschreven bij NHL Stenden?</label>
