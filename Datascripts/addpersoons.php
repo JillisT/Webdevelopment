@@ -5,6 +5,7 @@ session_start();
 
 if (isset($_POST['studentnum'], $_POST['achternaam'], $_POST['roepnaam'], $_POST['klas'], $_POST['geboortedatum'], $_POST['adres'], $_POST['telnummer'], $_POST['email'], $_POST['bsn'], $_POST['IBAN']))
 {
+    $id = $_SESSION['ID'];
     $studentnum = $_POST['studentnum'];
     $achternaam = $_POST['achternaam'];
     $roepnaam = $_POST['roepnaam'];
@@ -17,11 +18,12 @@ if (isset($_POST['studentnum'], $_POST['achternaam'], $_POST['roepnaam'], $_POST
     $iban= $_POST['IBAN'];
 
     
-    $sql = "INSERT INTO student(studentnummer, achternaam, roepnaam, klassennaam, geboortedatum, adres, telefoonnummer, email, bsn, iban)
-            value (:studentnum,:achternaam, :roepnaam, :klassennaam, :geboortedatum, :adres, :telefoonnummer, :email, :bsn, :iban)";
+    $sql = "INSERT INTO student(id, studentnummer, achternaam, roepnaam, klassennaam, geboortedatum, adres, telefoonnummer, email, bsn, iban)
+            value (:id, :studentnum,:achternaam, :roepnaam, :klassennaam, :geboortedatum, :adres, :telefoonnummer, :email, :bsn, :iban)";
 
     if ($stmt = $conn->prepare($sql))
     {
+        $stmt->bindParam(":id", $param_id, PDO::PARAM_INT);
         $stmt->bindParam(":studentnum", $param_studentnum, PDO::PARAM_INT);
         $stmt->bindParam(":achternaam", $param_achternaam, PDO::PARAM_STR);
         $stmt->bindParam(":roepnaam", $param_roepnaam, PDO::PARAM_STR);
@@ -32,7 +34,8 @@ if (isset($_POST['studentnum'], $_POST['achternaam'], $_POST['roepnaam'], $_POST
         $stmt->bindParam(":email", $param_email, PDO::PARAM_STR);
         $stmt->bindParam(":bsn", $param_bsn, PDO::PARAM_INT);
         $stmt->bindParam(":iban", $param_iban, PDO::PARAM_STR);
-        
+    
+        $param_id = $id;
         $param_studentnum = $studentnum;
         $param_achternaam = $achternaam;
         $param_roepnaam = $roepnaam;

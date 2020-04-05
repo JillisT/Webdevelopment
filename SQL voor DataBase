@@ -18,12 +18,13 @@ create table users
   ID int auto_increment not null primary key,
   gebruikersnaam varchar(255) not null,
   wachtwoord varchar(255) not null,
-  aanvraag_num int null,
+  aanvraag_num tinytext null,
   type varchar(50) not null
 );
 
 create table student
 (
+    id                 int          null,
     studentnummer      int unsigned not null
         primary key,
     achternaam         tinytext     null,
@@ -41,21 +42,22 @@ create table student
 
 create table opleiding
 (
-    ingeschreven       binary(1)    null,
+    id                 int          null,
+    ingeschreven       tinytext     null,
     opleidingscode     varchar(30)  null,
     opleidingsvariant  tinytext     null,
     startjaar          int          null,
-    studiejaar         int          null,
-    onderbroken        binary(1)    null,
-    uitgeschreven      binary(1)    null,
-    andere_studie      binary(1)    null,
+    studiejaar         tinytext     null,
+    onderbroken        tinytext     null,
+    uitgeschreven      tinytext     null,
+    andere_studie      tinytext     null,
     naam_andere_studie tinytext     null,
-    naam_decaan        varchar(30)  null,
     reden              tinytext     null
 );
 
 create table omstandigheden
 (
+    id                 int          null,
     studentnummer            int      unsigned not null
         primary key,
     studievertraging         int       null,

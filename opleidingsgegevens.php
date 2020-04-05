@@ -4,7 +4,7 @@
     session_start();
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
-    
+    include "vragenform/vragennav.php";
     ?>
     <title>Opleidingsgegevens</title>
 </head>
@@ -30,7 +30,7 @@
                 <div class="col-lg-6"></div>
                 <div class="wrapper col-sm-8 col-md-12" style="margin-top: 50px;">
                     <h2>Opleidingsgegevens</h2>
-                    <form action="Datascripts/addpersoonsgegevens.php" method="post">
+                    <form action="Datascripts/addopleiding.php" method="post">
 
                         <br>
                         <label>Sta jij op dit moment ingeschreven bij NHL Stenden?</label>
@@ -42,13 +42,10 @@
 
                         <br>
                         <label>Voor welke opleiding sta jij op dit moment ingeschreven?</label>
-                        <select class="form-control <?php echo (!empty($leeg2_err)) ? 'has-error' : ''; ?>" name="opleiding" required>
-                            <option>Select option:</option>
-                            <option> .opleiding sample. </option>
-                            <option> ..opleiding sample.. </option>
-                            <option> ...opleiding sample... </option>
-                        </select>
-
+                        <div class="form-group">
+                            <input type="text" name="opleiding" class="form-control" placeholder="Opleiding" required>
+                        </div>
+                        
                         <br>
                         <label>Welke opleidingvariant volg jij?</label>
                         <select class="form-control <?php echo (!empty($leeg3_err)) ? 'has-error' : ''; ?>" name="opleidingvar" required>
@@ -58,10 +55,17 @@
                             <option> Duaal </option>
                         </select>
 
+<!--                        <br>-->
+<!--                        <label> Startdatum studie</label>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="date" name="startdatum" class="form-control" placeholder="Startdatum studie">-->
+<!--                        </div>-->
+                        
                         <br>
-                        <label> Startdatum studie</label>
-                        <div class="form-group">
-                            <input type="date" name="startdatum" class="form-control" placeholder="Startdatum studie">
+                            <div class="form-group">
+                            <label>Startdatum studie:</label>
+                            <input type="text" name="startdatum" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
 
                         <br>
@@ -125,21 +129,14 @@
                                 Bestuur mede in het belang zijn van de hogeschool of van het onderwijs dat de student volgt</option>
                         </select>
 
-                        <?php
-                        include "vragennav.php";
-                        ?>
-
-
-
-
-
+                        
                         <label> NB: Studenten die bestuurslid zijn van een erkende studentenvereniging, zoals benoemd in
                             Regeling Profileringsfonds, Artikel 4.1 lid 2a worden via hun erkende studentenverenging
                             geïnformeerd over hoe ze aanspraak kunnen maken op financiële ondersteuning. </label>
 
 
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Submit">
+                            <input type="submit" class="btn btn-primary" value="Volgende">
                         </div>
                     </form>
                 </div>

@@ -4,6 +4,7 @@
     session_start();
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
+    include "vragenform/vragennav.php";
     ?>
     <title>Persoonsgevens</title>
 </head>
@@ -29,7 +30,7 @@
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
                     <h2>Gegevens</h2>
-                    <form action="Datascripts/addpersoonsgegevens.php" method="post">
+                    <form action="Datascripts/addpersoons.php" method="post">
 
                         <br>
                         <div class="form-group">
