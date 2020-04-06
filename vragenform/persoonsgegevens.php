@@ -2,9 +2,9 @@
 <head>
     <?php
     session_start();
-    require "include/stylesheets.php";
-    include "DataBase/connectToDatabase.php";
-    include "vragenform/vragennav.php";
+    require "../include/stylesheets.php";
+    include "../DataBase/connectToDatabase.php";
+    include "vragennav.php";
     ?>
     <title>Persoonsgevens</title>
 </head>
@@ -23,14 +23,14 @@
         <div class="container-fluid">
 
             <?php
-            require "include/NavBar.php";
+            require "../include/NavBar.php";
             ?>
             <!--login table start-->
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
                     <h2>Gegevens</h2>
-                    <form action="Datascripts/addpersoons.php" method="post">
+                    <form action="../Datascripts/addpersoons.php" method="post">
 
                         <br>
                         <div class="form-group">

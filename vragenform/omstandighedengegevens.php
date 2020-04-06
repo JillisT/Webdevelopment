@@ -29,7 +29,7 @@
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
                     <h2>Login</h2>
-                    <form action="" method="post">
+                    <form action="../Datascripts/addomstandigheden.php" method="post">
 
                         <br>
                         <div class="form-group">
@@ -53,12 +53,18 @@
 
 
                         <label>Heb je recht (gehad) op een extra jaar studiefinanciering/aanvullende beurs via DUO?</label>
-                        <!-- insert add option here -->
-                        <input type="image" name="bewijsstud" class="form-control" placeholder="Bewijs extra studiefinanciering">
-                        <br>
+                        <select class="form-control <?php echo (!empty($leeg7_err)) ? 'has-error' : ''; ?>" name="extrafin" required>
+                            <option>Select option:</option>
+                            <option>Ja</option>
+                            <option>Nee</option>
+                        </select>
+                        
+<!--                        Bij ja, moet een bewijsstuk!-->
 
-
-
+<!--                        <!-- insert add option here -->-->
+<!--                        <input type="image" name="bewijsstud" class="form-control" placeholder="Bewijs extra studiefinanciering">-->
+<!--                        <br>-->
+    
 
                         <div class="form-group">
                             <label>
@@ -66,7 +72,8 @@
                                 aangevraagd, per wanneer is deze ingegaan? Vermeld
                                 datum.
                             </label>
-                            <input type="date" name="jaarextra" class="form-control" placeholder="Jaar extra studiefinanciering" required>
+                            <input type="text" name="finstart" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
                         <br>
 
@@ -83,19 +90,45 @@
                             <label>
                                 Heb je eerder financiële ondersteuning uit het
                                 Profileringsfonds ontvangen?
+                            </label>
+                            <select class="form-control <?php echo (!empty($leeg7_err)) ? 'has-error' : ''; ?>" name="ondgehad" required>
+                                <option>Select option:</option>
+                                <option>Ja</option>
+                                <option>Nee</option>
+                            </select>
+                            
+                        </div>
+                        <br>
+                        <br>
+    
+                        <div class="form-group">
+                            <label>
+                                Als je eerder financiële ondersteuning uit het
+                                Profileringsfonds ontvangen, voor hoevel maanden waren dit?
                                 <br>
                                 (Als dit niet van toepassing is laat je dit veld leeg!)
                             </label>
-                            <input type="text" name="oudfinanonderst" class="form-control" placeholder="Eerdere maanden financiële ondersteuning">
+                            <input type="text" name="duurgehad" class="form-control" placeholder="Maanden financiële ondersteuning" required>
                         </div>
                         <br>
+    
+                        <div class="form-group">
+                            <label>
+                                Als je eerder financiële ondersteuning uit het
+                                Profileringsfonds ontvangen, welk academisch jaar was dit. (20XX/20XX)
+                                <br>
+                                (Als dit niet van toepassing is laat je dit veld leeg!)
+                            </label>
+                            <input type="text" name="jaargehad" class="form-control" placeholder="20XX/20XX" required
+                            pattern="(20)[0-99]/(20)[0-99]">
+                        </div>
                         <br>
 
                         <div class="form-group">
                             <label>
                                 Waaruit bestond de door jou aangevoerde bijzondere omstandigheid?
                             </label>
-                            <input type="text" name="oorspr" class="form-control" placeholder="Oorsprong problemen" required>
+                            <input type="textarea" name="oorspr" class="form-control" placeholder="Oorsprong problemen" required>
                         </div>
                         <br>
 

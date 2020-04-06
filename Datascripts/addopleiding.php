@@ -18,11 +18,12 @@
         $andere_studie = $_POST['andereopl'];
         $naam_andere_studie= $_POST['andereopl2'];
         $reden = $_POST['studvertr'];
-        
-        
+    
         $sql = "INSERT INTO opleiding(id, ingeschreven, opleiding, opleidingsvariant, startjaar, studiejaar, onderbroken, uitgeschreven, andere_studie, naam_andere_studie, reden)
             value (:id, :ingeschreven, :opleiding, :opleidingsvariant, :startjaar, :studiejaar, :onderbroken, :uitgeschreven, :andere_studie, :naam_andere_studie, :reden)";
         
+        
+            
         if ($stmt = $conn->prepare($sql))
         {
             $stmt->bindParam(":id", $param_id, PDO::PARAM_INT);
@@ -52,8 +53,8 @@
             
             if ($stmt->execute())
             {
-                // Stuur door naar opleidingsgegevens
-                header("Location: ../opleidingsgegevens.php");
+                // Stuur door naar omstandighedengegevens
+                header("Location: ../vragenform/omstandighedengegevens.php");
             } else
             {
                 echo "Er is iets fout gegaan. Probeer het later nog eens.";

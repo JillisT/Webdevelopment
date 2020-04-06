@@ -58,13 +58,11 @@ create table opleiding
 create table omstandigheden
 (
     id                 int          null,
-    studentnummer            int      unsigned not null
-        primary key,
     studievertraging         int       null,
     duo_stelsel              tinytext  null,
-    recht_extra_financiering binary(1) null,
+    recht_extra_financiering tinytext null,
     financiering_ingegaan    date      null,
-    ondersteuning_gehad      binary(1) null,
+    ondersteuning_gehad      tinytext null,
     ondersteuning_duur       int       null,
     ondersteuning_jaar       int       null,
     toelichting              text      null,
