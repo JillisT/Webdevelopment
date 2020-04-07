@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
-                    <h2>Gegevens</h2>
+                    <h2>Persoonlijke gegevens</h2>
                     <form action="../Datascripts/addpersoons.php" method="post">
 
                         <br>
@@ -50,22 +50,17 @@
                         </div>
                         <br>
                         <div class="form-group">
-                            <label>Klas:</label>
-                            <input type="text" name="klas" class="form-control" placeholder="Klas" required>
-                        </div>
-                        <br>
-<!--                        <div class="form-group">-->
-<!--                            <label>Geboortedatum:</label>-->
-<!--                            <input type="date" name="geboortedatum" class="form-control" placeholder="Geboortedatum" required>-->
-<!--                        </div>-->
-<!--                        <br>-->
-                        <br>
-                        <div class="form-group">
                             <label>Geboortedatum:</label>
                             <input type="text" name="geboortedatum" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
-                        <label>Adres:</label>
+                        <br>
+                        <div class="form-group">
+                            <label>Klas:</label>
+                            <input type="text" name="klas" class="form-control" placeholder="Klas" required>
+                        </div>
+                        <br>
+                        <label>Adres/Postcode/Woonplaats</label>
                         <div class="form-group">
                             <input type="text" name="adres" class="form-control" placeholder="Adres" required>
                         </div>
@@ -82,7 +77,7 @@
                         <br>
                         <div class="form-group">
                             <label>BSN nummer:</label>
-                            <input type="number" name="bsn" class="form-control" placeholder="BSN nummer" required>
+                            <input type="text" name="bsn" class="form-control" placeholder="BSN nummer" required>
                         </div>
                         <br>
                         <div class="form-group">

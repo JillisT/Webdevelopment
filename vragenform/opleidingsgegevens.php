@@ -55,12 +55,6 @@
                             <option> Duaal </option>
                         </select>
 
-<!--                        <br>-->
-<!--                        <label> Startdatum studie</label>-->
-<!--                        <div class="form-group">-->
-<!--                            <input type="date" name="startdatum" class="form-control" placeholder="Startdatum studie">-->
-<!--                        </div>-->
-                        
                         <br>
                             <div class="form-group">
                             <label>Startdatum studie:</label>

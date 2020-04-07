@@ -53,7 +53,7 @@
 
 
                         <label>Heb je recht (gehad) op een extra jaar studiefinanciering/aanvullende beurs via DUO?</label>
-                        <select class="form-control <?php echo (!empty($leeg7_err)) ? 'has-error' : ''; ?>" name="extrafin" required>
+                        <select class="form-control <?php echo (!empty($leeg8_err)) ? 'has-error' : ''; ?>" name="extrafin" required>
                             <option>Select option:</option>
                             <option>Ja</option>
                             <option>Nee</option>
@@ -61,7 +61,7 @@
                         
 <!--                        Bij ja, moet een bewijsstuk!-->
 
-<!--                        <!-- insert add option here -->-->
+<!--                         insert add option here -->
 <!--                        <input type="image" name="bewijsstud" class="form-control" placeholder="Bewijs extra studiefinanciering">-->
 <!--                        <br>-->
     
@@ -71,6 +71,8 @@
                                 Indien je een extra jaar studiefinanciering hebt
                                 aangevraagd, per wanneer is deze ingegaan? Vermeld
                                 datum.
+                                <br>
+                                (Als dit niet van toepassing is laat je dit veld leeg!)
                             </label>
                             <input type="text" name="finstart" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
@@ -91,7 +93,7 @@
                                 Heb je eerder financiële ondersteuning uit het
                                 Profileringsfonds ontvangen?
                             </label>
-                            <select class="form-control <?php echo (!empty($leeg7_err)) ? 'has-error' : ''; ?>" name="ondgehad" required>
+                            <select class="form-control <?php echo (!empty($leeg9_err)) ? 'has-error' : ''; ?>" name="ondgehad" required>
                                 <option>Select option:</option>
                                 <option>Ja</option>
                                 <option>Nee</option>
@@ -128,17 +130,19 @@
                             <label>
                                 Waaruit bestond de door jou aangevoerde bijzondere omstandigheid?
                             </label>
-                            <input type="textarea" name="oorspr" class="form-control" placeholder="Oorsprong problemen" required>
+                            <input type="text" name="oorspr" class="form-control" placeholder="Oorsprong problemen" required>
                         </div>
-                        <br>
-
                         <div class="form-group">
                             <label>
-                                Wanneer vond deze plaats en wanneer geëindigd?
+                                Wanneer vond deze plaats?
                             </label>
-                            <input type="date" name="jaaroorspr" class="form-control" placeholder="Jaar begin probleem" required>
-                        <br>
-                            <input type="date" name="jaareinde" class="form-control" placeholder="Jaar einde probleem" required>
+                            <input type="text" name="jaaroorspr" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                            <label>
+                                En wanneer was dit geëindigd?
+                            </label>
+                            <input type="text" name="jaareinde" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
                         <br>
 
@@ -146,9 +150,16 @@
                             <label>
                                 Op welke datum en bij wie heb je melding gemaakt van deze bijzondere omstandigheid?
                             </label>
-                            <input type="date" name="datumdec" class="form-control" placeholder="Melding probleem bij decaan/topsportcoördinator" required>
-                            <br>
-                            <input type="date" name="datumstudbeg" class="form-control" placeholder="Melding probleem bij studiebegeleider" required>
+                            <label>
+                                Bij decaan op:
+                            </label>
+                            <input type="text" name="datumdec" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                            <label>
+                                Bij studiebegeleider op:
+                            </label>
+                            <input type="text" name="datumstudbeg" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
                         <br>
 
@@ -156,9 +167,16 @@
                             <label>
                                 Op welke datum en bij wie heb je de bijzondere omstandigheid eventueel afgemeld?
                             </label>
-                            <input type="date" name="datumdec2" class="form-control" placeholder="Melding einde probleem bij decaan/topsportcoördinator" required>
-                            <br>
-                            <input type="date" name="datumstudbeg2" class="form-control" placeholder="Melding einde probleem bij studiebegeleider" required>
+                            <label>
+                                Bij decaan op:
+                            </label>
+                            <input type="text" name="datumdec2" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                            <label>
+                                Bij studiebegeleider op:
+                            </label>
+                            <input type="text" name="datumstudbeg2" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
                         <br>
 
@@ -191,7 +209,7 @@
                         <div class="form-group">
                             <label>
                                 Op welke wijze heb je geprobeerd de negatieve gevolgen van de bijzondere omstandigheid voor
-                                jouw studie dan wel studiefinanciering 1 zoveel mogelijk te beperken dan wel te voorkomen
+                                jouw studie dan wel studiefinanciering zoveel mogelijk te beperken dan wel te voorkomen
                                 (VB: raadplegen decaan, tussentijds uitschrijven/stopzetten studiefinanciering)?
                             </label>
                             <input type="text" name="vertragingreductie" class="form-control" placeholder="Acties die ik heb gedaan om vertraging te beperken" required>
