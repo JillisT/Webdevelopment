@@ -57,12 +57,12 @@ create table opleiding
 
 create table omstandigheden
 (
-    id                 int          null,
+    id                      int        null,
     studievertraging         int       null,
     duo_stelsel              tinytext  null,
-    recht_extra_financiering tinytext null,
+    recht_extra_financiering tinytext  null,
     financiering_ingegaan    date      null,
-    ondersteuning_gehad      tinytext null,
+    ondersteuning_gehad      tinytext  null,
     ondersteuning_duur       int       null,
     ondersteuning_jaar       int       null,
     toelichting              text      null,
@@ -77,8 +77,7 @@ create table omstandigheden
     beperken_omstandigheden  text      null,
     aanvraag_duur            int       null,
     handtekening_plaats      tinytext  null,
-    handtekening_datum       date      null,
-
+    handtekening_datum       date      null
 );
 
 
