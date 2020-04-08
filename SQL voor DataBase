@@ -79,9 +79,6 @@ create table omstandigheden
     handtekening_plaats      tinytext  null,
     handtekening_datum       date      null,
 
-    constraint student_ibfk_1
-        foreign key (studentnummer) references student (studentnummer)
-
 );
 
 
