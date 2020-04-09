@@ -17,7 +17,7 @@ if($stmt = $conn->prepare($sql)){
     // Attempt to execute the prepared statement
     if($stmt->execute()){
         // Redirect to login page
-        header("location: ../persoonsgegevens.php");
+        header("location: ../vragenform/persoonsgegevens.php");
     } else{
         echo "Er is iets fout gegaan. Probeer het later nog eens.";
     }

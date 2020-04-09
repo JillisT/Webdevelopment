@@ -51,7 +51,7 @@ if (isset($_POST['studentnum'], $_POST['achternaam'], $_POST['roepnaam'], $_POST
         if ($stmt->execute())
         {
             // Stuur door naar opleidingsgegevens
-            header("Location: ../opleidingsgegevens.php");
+            header("Location: ../vragenform/opleidingsgegevens.php");
         }
         else
         {
