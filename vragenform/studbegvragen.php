@@ -22,7 +22,7 @@
         <div class="container-fluid">
 
             <?php
-            require "../include/NavBar.php";
+            require "NavBarVragen.php";
             ?>
             <!--login table start-->
             <div class="row">
@@ -34,11 +34,11 @@
                         <br>
                         <div class="form-group">
                             <label>
-                                Naam student: <?php echo "" ?>
+                                Naam student: <input type="text" name="naamstud" class="form-control" placeholder="Naam student" required>
                                 <br>
-                                Studentnummer: <?php echo "" ?>
+                                Studentnummer: <input type="text" name="studnum" class="form-control" placeholder="Studentnummer" required>
                                 <br>
-                                Opleiding: <?php echo "" ?>
+                                Opleiding: <input type="text" name="studopl" class="form-control" placeholder="Opleiding" required>
 
                                 <br>
                             </label>

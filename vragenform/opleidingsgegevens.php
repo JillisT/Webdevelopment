@@ -23,7 +23,7 @@
         <div class="container-fluid">
 
             <?php
-            require "../include/NavBar.php";
+            require "NavBarVragen.php";
             ?>
             <!--login table start-->
             <div class="row">

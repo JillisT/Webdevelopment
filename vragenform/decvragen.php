@@ -22,7 +22,7 @@
         <div class="container-fluid">
 
             <?php
-            require "../include/NavBar.php";
+            require "NavBarVragen.php";
             ?>
             <!--login table start-->
             <div class="row">
@@ -34,15 +34,31 @@
                         <br>
                         <div class="form-group">
                             <label>
-                                Naam student: <?php echo "" ?>
+                                Naam student: <input type="text" name="naamstud" class="form-control" placeholder="Naam student" required>
                                 <br>
-                                Studentnummer: <?php echo "" ?>
+                                Studentnummer: <input type="text" name="studnum" class="form-control" placeholder="Studentnummer" required>
                                 <br>
-                                Opleiding: <?php echo "" ?>
+                                Opleiding: <input type="text" name="studopl" class="form-control" placeholder="Opleiding" required>
                                 <br>
-                                Omstandigheden:
-                                <br>
-                                Periode omstandigheden: <?php echo "" ?>
+
+                                <label>Wat is de reden van studievertraging?</label>
+                                <select class="form-control <?php echo (!empty($studvertr_err)) ? 'has-error' : ''; ?>" name="studvertr" required>
+                                    <option>Select option:</option>
+                                    <option>Ziekte of zwangerschap en bevalling</option>
+                                    <option>Een functiestoornis, handicap of chronische ziekte</option>
+                                    <option>Bijzondere familieomstandigheden</option>
+                                    <option> Een onvoldoende studeerbare opleiding</option>
+                                    <option>De door de hogeschool toegekende status van topsporter</option>
+
+                                    <!-- dit moet korter!!! -->
+                                    <option>Andere dan de in de hierboven genoemde onderdelen bedoelde omstandigheden die, indien
+                                        een daarop gebaseerd verzoek om financiële ondersteuning door het College van Bestuur niet
+                                        zou worden gehonoreerd, zouden leiden tot een onbillijkheid van overwegende aard</option>
+                                    <!--  -->
+
+                                    <option>Activiteiten op bestuurlijk of maatschappelijk gebied die naar het oordeel van het College van
+                                        Bestuur mede in het belang zijn van de hogeschool of van het onderwijs dat de student volgt</option>
+                                </select>
                             </label>
                         </div>
                         <br>
@@ -81,6 +97,11 @@
                                 Datum melding
                             </label>
                             <input type="text" name="datmeldingdec" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                            <label>
+                                Datum afmelding
+                            </label>
+                            <input type="text" name="datafmeldingdec" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
                         <br>
