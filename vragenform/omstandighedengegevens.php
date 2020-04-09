@@ -3,7 +3,7 @@
     <?php
     session_start();
     require "../include/stylesheets.php";
-    //include "DataBase/connectToDatabase.php";
+    include "../DataBase/connectToDatabase.php";
     ?>
     <title>Vragen</title>
 </head>
@@ -43,7 +43,7 @@
                         <br>
 
                         <label>Onder welk stelsel van DUO val jij?</label>
-                        <select class="form-control <?php echo (!empty($leeg7_err)) ? 'has-error' : ''; ?>" name="inschrijving" required>
+                        <select class="form-control <?php echo (!empty($leeg7_err)) ? 'has-error' : ''; ?>" name="duo" required>
                             <option>Select option:</option>
                             <option>Prestatiebeurs</option>
                             <option>Leenstelsel (per 1 september 2015)</option>
@@ -110,7 +110,7 @@
                                 <br>
                                 (Als dit niet van toepassing is laat je dit veld leeg!)
                             </label>
-                            <input type="text" name="duurgehad" class="form-control" placeholder="Maanden financiële ondersteuning" required>
+                            <input type="text" name="duurgehad" class="form-control" placeholder="Maanden financiële ondersteuning" >
                         </div>
                         <br>
     
@@ -121,8 +121,8 @@
                                 <br>
                                 (Als dit niet van toepassing is laat je dit veld leeg!)
                             </label>
-                            <input type="text" name="jaargehad" class="form-control" placeholder="20XX/20XX" required
-                            pattern="(20)[0-99]/(20)[0-99]">
+                            <input type="text" name="jaargehad" class="form-control" placeholder="20XX/20XX"
+                            >
                         </div>
                         <br>
 
@@ -130,18 +130,18 @@
                             <label>
                                 Waaruit bestond de door jou aangevoerde bijzondere omstandigheid?
                             </label>
-                            <input type="text" name="oorspr" class="form-control" placeholder="Oorsprong problemen" required>
+                            <input type="text" name="omstandig" class="form-control" placeholder="Oorsprong problemen" required>
                         </div>
                         <div class="form-group">
                             <label>
                                 Wanneer vond deze plaats?
                             </label>
-                            <input type="text" name="jaaroorspr" class="form-control" placeholder="JJJJ-MM-DD" required
+                            <input type="text" name="beginom" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                             <label>
                                 En wanneer was dit geëindigd?
                             </label>
-                            <input type="text" name="jaareinde" class="form-control" placeholder="JJJJ-MM-DD" required
+                            <input type="text" name="eindeom" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
                         <br>
