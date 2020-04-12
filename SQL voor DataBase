@@ -42,17 +42,17 @@ create table student
 
 create table opleiding
 (
-    id                 int          null,
-    ingeschreven       tinytext     null,
-    opleidingscode     varchar(30)  null,
-    opleidingsvariant  tinytext     null,
-    startjaar          int          null,
-    studiejaar         tinytext     null,
-    onderbroken        tinytext     null,
-    uitgeschreven      tinytext     null,
-    andere_studie      tinytext     null,
-    naam_andere_studie tinytext     null,
-    reden              tinytext     null
+    ingeschreven       tinytext null,
+    opleiding          tinytext null,
+    opleidingsvariant  tinytext null,
+    startjaar          int      null,
+    studiejaar         tinytext null,
+    onderbroken        tinytext null,
+    uitgeschreven      tinytext null,
+    andere_studie      tinytext null,
+    naam_andere_studie tinytext null,
+    reden              tinytext null,
+    id                 int      null
 );
 
 create table omstandigheden
@@ -76,7 +76,7 @@ create table omstandigheden
     studieonderdelen         text     null,
     duur_vertraging          int      null,
     invloed_omstandigheden   text     null,
-    beperken_omstandigheden  text     null,
+    beperken_omstandigheden  text     null
 );
 
 
