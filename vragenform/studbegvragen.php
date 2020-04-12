@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
-                    <form action="" method="post">
+                    <form action="../Datascripts/addslb.php" method="post">
 
                         <h3> Gegevens omstandigheden student </h3>
                         <br>
@@ -61,7 +61,7 @@
                                         hier geen einddatum worden vermeld).
                                         </b>
 
-                                    <input type="text" name="datmeldingstudbeg" class="form-control" placeholder="JJJJ-MM-DD" required
+                                    <input type="text" name="dateinde" class="form-control" placeholder="JJJJ-MM-DD" required
                                            pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                                 </div>
 
@@ -69,7 +69,7 @@
                                     <label>
                                         Totale duur van omstandigheden (in maanden).
                                     </label>
-                                    <input type="text" name="duuromst" class="form-control" placeholder="Naam decaan" required>
+                                    <input type="text" name="duuromst" class="form-control" placeholder="Duur in maanden" required>
                                 </div>
 
                                 <br>
@@ -108,13 +108,7 @@
                                     </label>
                                     <input type="text" name="maandennodig" class="form-control" placeholder="Benodigde maanden" required>
                                 </div>
-                                <div class="form-group">
-                                    <label>
-                                        Hoeveel maanden is er (gelet op de onderwijsprogrammering) nodig om de als gevolg van de
-                                        bijzondere omstandigheid opgelopen studievertraging in te halen.
-                                    </label>
-                                    <input type="text" name="maandennodig" class="form-control" placeholder="Benodigde maanden" required>
-                                </div>
+
 
                                 <label>
                                     De mogelijkheden indien de student(e) gezakt is voor een
@@ -142,12 +136,6 @@
                                 <br>
                                 <h3> Info Studiebegeleider: </h3>
                                 <br>
-                                <div class="form-group">
-                                    <label>
-                                        Datum.
-                                    </label>
-                                    <input type="text" name="datum" class="form-control" placeholder="Datum">
-                                </div>
                                 <div class="form-group">
                                     <label>
                                         Naam.

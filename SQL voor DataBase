@@ -77,34 +77,30 @@ create table omstandigheden
     duur_vertraging          int      null,
     invloed_omstandigheden   text     null,
     beperken_omstandigheden  text     null,
-    handtekening_plaats      tinytext null,
-    handtekening_datum       date     null
 );
 
 
 create table decaan
 (
+    id                  int      null,
     naam_student        tinytext    null,
-    studentnummer int unsigned primary key not null ,
+    studentnummer int not null ,
     opleiding           tinytext    null,
+    omstandigheden      tinytext    null,
     naam_decaan         tinytext    null,
     datum_melding       date        null,
-    omstandigheden      tinytext    null,
     begindatum          date        null,
     einddatum           date        null,
     toelichting         text        null,
-    advies_duur         text        null,
-    handtekening_plaats tinytext    null,
-    handtekening_datum  date        null,
+    advies_duur         int        null,
 
-    constraint student_ibfk_2
-        foreign key (studentnummer) references student (studentnummer)
 );
 
 create table slb
 (
+    id                   int      null,
     naam_student        tinytext    null,
-    studentnummer int unsigned primary key not null ,
+    studentnummer int not null ,
     opleiding           tinytext    null,
     begindatum date null,
     einddatum date null,
@@ -116,12 +112,8 @@ create table slb
     tijd_nodig int null,
     mogelijkheden_gezakt tinytext null,
     extra_info text null,
-    handtekening_datum date null ,
-    handtekening_naam tinytext null ,
-    handtekening_functie tinytext null ,
-
-  constraint student_ibfk_3
-      foreign key (studentnummer) references student (studentnummer)
+    naam_slb tinytext null,
+    functie_slb tinytext null
 );
 
 create table studievoortgang
@@ -140,10 +132,7 @@ create table studievoortgang
     ec_jaar6 int ,
     jaar6 int,
     ec_jaar7 int ,
-    jaar7 int,
-
-        constraint student_ibfk_4
-        foreign key (studentnummer) references student (studentnummer)
+    jaar7 int
 );
 
 

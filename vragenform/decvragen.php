@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
-                    <form action="" method="post">
+                    <form action="../Datascripts/adddecaan.php" method="post">
 
                         <h3> Gegevens omstandigheden student </h3>
                         <br>
@@ -91,17 +91,26 @@
                             <input type="text" name="decaannaam" class="form-control" placeholder="Naam decaan" required>
                         </div>
                         <br>
-
+    
                         <div class="form-group">
                             <label>
                                 Datum melding
                             </label>
                             <input type="text" name="datmeldingdec" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                        </div>
+                        <br>
+
+                        <div class="form-group">
                             <label>
-                                Datum afmelding
+                                Wanneer is het probleem begonnen?
                             </label>
-                            <input type="text" name="datafmeldingdec" class="form-control" placeholder="JJJJ-MM-DD" required
+                            <input type="text" name="datbegin" class="form-control" placeholder="JJJJ-MM-DD" required
+                                   pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                            <label>
+                                Tot wanneer speelde het probleem? (laat leeg als het nog speelt)
+                            </label>
+                            <input type="text" name="dateinde" class="form-control" placeholder="JJJJ-MM-DD"
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
                         <br>
@@ -110,7 +119,8 @@
                             <label>
                                 Toelichting
                             </label>
-                            <input type="text" name="toelichting" class="form-control" placeholder="Toelichting">
+                            <TEXTAREA Name="toelichting" ROWS="10" COLS="20" class="form-control" placeholder="Toelichting" required></TEXTAREA>
+                            <!--                            <input type="text" name="toelichting" class="form-control" placeholder="Toelichting">-->
                         </div>
                         <br>
 

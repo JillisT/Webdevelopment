@@ -186,7 +186,8 @@
                                 konden worden gevolgd, voor welke studieonderdelen de mogelijkheid van een herkansing
                                 bestaat en welke studieonderdelen –wanneer- dienen te worden overgelopen.
                             </label>
-                            <input type="text" name="vertraging" class="form-control" placeholder="Vertraging info" required>
+                            <TEXTAREA Name="vertraging" ROWS="10" COLS="20" class="form-control" placeholder="Vertraging info" required></TEXTAREA>
+<!--                            <input type="text" name="vertraging" class="form-control" placeholder="Vertraging info" required>-->
                         </div>
                         <br>
 
@@ -202,7 +203,8 @@
                             <label>
                                 Op welke wijze heeft de bijzondere omstandigheid het verloop van je studie beïnvloed?
                             </label>
-                            <input type="text" name="vertragingwijze" class="form-control" placeholder="Vertraging wijze" required>
+                            <TEXTAREA Name="vertragingwijze" ROWS="10" COLS="20" class="form-control" placeholder="Vertraging wijze" required></TEXTAREA>
+<!--                            <input type="text" name="vertragingwijze" class="form-control" placeholder="Vertraging wijze" required>-->
                         </div>
                         <br>
 
@@ -212,7 +214,8 @@
                                 jouw studie dan wel studiefinanciering zoveel mogelijk te beperken dan wel te voorkomen
                                 (VB: raadplegen decaan, tussentijds uitschrijven/stopzetten studiefinanciering)?
                             </label>
-                            <input type="text" name="vertragingreductie" class="form-control" placeholder="Acties die ik heb gedaan om vertraging te beperken" required>
+                            <TEXTAREA Name="vertragingreductie" ROWS="5" COLS="20" class="form-control" placeholder="Acties die ik heb gedaan om vertraging te beperken" required></TEXTAREA>
+<!--                            <input type="text" name="vertragingreductie" class="form-control" placeholder="Acties die ik heb gedaan om vertraging te beperken" required>-->
                         </div>
                         <br>
 
