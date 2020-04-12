@@ -5,7 +5,7 @@
     require "../include/stylesheets.php";
     include "../DataBase/connectToDatabase.php";
     ?>
-    <title>Decaan vragen</title>
+    <title>SLB'er vragen</title>
 </head>
 <body>
 
