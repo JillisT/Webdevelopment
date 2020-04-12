@@ -30,15 +30,15 @@
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
                     <form action="../Datascripts/addslb.php" method="post">
 
-                        <h3> Gegevens omstandigheden student </h3>
+                        <h3> Gegevens omstandigheden student: </h3>
                         <br>
                         <div class="form-group">
                             <label>
-                                Naam student: <input type="text" name="naamstud" class="form-control" placeholder="Naam student" required>
+                                Naam student:<b style="color: red">*</b> <input type="text" name="naamstud" class="form-control" placeholder="Naam student" required>
                                 <br>
-                                Studentnummer: <input type="text" name="studnum" class="form-control" placeholder="Studentnummer" required>
+                                Studentnummer:<b style="color: red">*</b> <input type="text" name="studnum" class="form-control" placeholder="Studentnummer" required>
                                 <br>
-                                Opleiding: <input type="text" name="studopl" class="form-control" placeholder="Opleiding" required>
+                                Opleiding:<b style="color: red">*</b> <input type="text" name="studopl" class="form-control" placeholder="Opleiding" required>
 
                                 <br>
                             </label>
@@ -47,7 +47,7 @@
                                 <br>
                                 <div class="form-group">
                                     <label>
-                                        Wanneer heeft de student de melding gemaakt over de problemen?
+                                        Wanneer heeft de student de melding gemaakt over de problemen?<b style="color: red">*</b>
                                     </label>
                                     <input type="text" name="datmeldingstudbeg" class="form-control" placeholder="JJJJ-MM-DD" required
                                            pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
@@ -57,17 +57,14 @@
                                         Wanneer heeft de student de melding gemaakt dat de omstandigheden zijn afgelopen?
                                     </label>
 
-                                        <b size="1">(Indien er nog steeds sprake is van de bijzondere omstandigheid, hoeft
-                                        hier geen einddatum worden vermeld).
-                                        </b>
 
-                                    <input type="text" name="dateinde" class="form-control" placeholder="JJJJ-MM-DD" required
+                                    <input type="text" name="dateinde" class="form-control" placeholder="JJJJ-MM-DD"
                                            pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                                 </div>
 
                                 <div class="form-group">
                                     <label>
-                                        Totale duur van omstandigheden (in maanden).
+                                        Totale duur van omstandigheden (in maanden).<b style="color: red">*</b>
                                     </label>
                                     <input type="text" name="duuromst" class="form-control" placeholder="Duur in maanden" required>
                                 </div>
@@ -79,40 +76,54 @@
                                 <br>
                                 <div class="form-group">
                                     <label>
-                                        Nominaal aantal EC dat gedurende deze periode behaald had kunnen worden.
+                                        Nominaal aantal EC dat gedurende deze periode behaald had kunnen worden.<b style="color: red">*</b>
                                     </label>
                                     <input type="text" name="maxecs" class="form-control" placeholder="Max EC's" required>
                                 </div>
                                 <div class="form-group">
                                     <label>
-                                        Aantal EC dat gedurende deze periode door de student is behaald.
+                                        Aantal EC dat gedurende deze periode door de student is behaald.<b style="color: red">*</b>
                                     </label>
                                     <input type="text" name="behecs" class="form-control" placeholder="Behaalde EC's" required>
                                 </div>
                                 <div class="form-group">
                                     <label>
-                                        Aantal EC dat gedurende deze periode door de student is behaald en in Progress staat.
+                                        Aantal EC dat gedurende deze periode door de student is behaald en in Progress staat.<b style="color: red">*</b>
                                     </label>
-                                    <input type="text" name="progressecs" class="form-control" placeholder="Behaalde EC's" required>
+                                    <input type="text" name="progressecs" class="form-control" placeholder="Behaalde EC's volgens progress" required>
                                 </div>
                                 <div class="form-group">
                                     <label>
-                                        Hoeveel EC moeten er nog worden behaald.
+                                        Hoeveel EC moeten er nog worden behaald.<b style="color: red">*</b>
                                     </label>
-                                    <input type="text" name="tebehecs" class="form-control" placeholder="Behaalde EC's" required>
+                                    <input type="text" name="tebehecs" class="form-control" placeholder="Te behaalden EC's" required>
                                 </div>
                                 <div class="form-group">
                                     <label>
                                         Hoeveel maanden is er (gelet op de onderwijsprogrammering) nodig om de als gevolg van de
-                                        bijzondere omstandigheid opgelopen studievertraging in te halen.
+                                        bijzondere omstandigheid opgelopen studievertraging in te halen.<b style="color: red">*</b>
                                     </label>
                                     <input type="text" name="maandennodig" class="form-control" placeholder="Benodigde maanden" required>
                                 </div>
 
+                            <br>
+
+                                <label>
+                                    Behaalde EC's in jaar <input type="text" required>: <input type="text" required><b style="color: red">*</b>.
+                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
+                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
+                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
+                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
+                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
+                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
+                                </label>
+
+                            <br>
+                            <br>
 
                                 <label>
                                     De mogelijkheden indien de student(e) gezakt is voor een
-                                    toets en of tentamen.
+                                    toets en of tentamen.<b style="color: red">*</b>
                                 </label>
                                 <select class="form-control <?php echo (!empty($leeg10_err)) ? 'has-error' : ''; ?>" name="regeling" required>
                                     <option>Select option:</option>
@@ -138,19 +149,37 @@
                                 <br>
                                 <div class="form-group">
                                     <label>
-                                        Naam.
+                                        Naam.<b style="color: red">*</b>
                                     </label>
-                                    <input type="text" name="naam" class="form-control" placeholder="Naam">
+                                    <input type="text" name="naam" class="form-control" placeholder="Naam" required>
                                 </div>
 
                             <label>
-                                Functie.
+                                Functie.<b style="color: red">*</b>
                             </label>
                             <select class="form-control <?php echo (!empty($leeg11_err)) ? 'has-error' : ''; ?>" name="functie" required>
                                 <option>Select option:</option>
                                 <option>studiebegeleider</option>
                                 <option>coördinator studie(traject)begeleiding</option>
                             </select>
+
+                            <!--
+
+
+                                Studieplan
+
+
+                            -->
+
+                            <br>
+                            <div class="form-group">
+                                <label>
+                                    Eventuele extra informatie
+                                </label>
+                                <TEXTAREA Name="extra info" ROWS="10" COLS="20" class="form-control" placeholder="Toelichting"></TEXTAREA>         <!-- Required???? -->
+                                <!--                            <input type="text" name="toelichting" class="form-control" placeholder="Toelichting">-->
+                            </div>
+
 
                             <br>
                             <label>Door ondertekening verklaar ik hierbij dat ik dit formulier met inbegrip van de versterkte informatie naar waarheid heb ingevuld.</label>

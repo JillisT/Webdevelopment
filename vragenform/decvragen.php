@@ -34,14 +34,14 @@
                         <br>
                         <div class="form-group">
                             <label>
-                                Naam student: <input type="text" name="naamstud" class="form-control" placeholder="Naam student" required>
+                                Naam student:<b style="color: red">*</b> <input type="text" name="naamstud" class="form-control" placeholder="Naam student" required>
                                 <br>
-                                Studentnummer: <input type="text" name="studnum" class="form-control" placeholder="Studentnummer" required>
+                                Studentnummer:<b style="color: red">*</b> <input type="text" name="studnum" class="form-control" placeholder="Studentnummer" required>
                                 <br>
-                                Opleiding: <input type="text" name="studopl" class="form-control" placeholder="Opleiding" required>
+                                Opleiding:<b style="color: red">*</b> <input type="text" name="studopl" class="form-control" placeholder="Opleiding" required>
                                 <br>
 
-                                <label>Wat is de reden van studievertraging?</label>
+                                <label>Wat is de reden van studievertraging?<b style="color: red">*</b></label>
                                 <select class="form-control <?php echo (!empty($studvertr_err)) ? 'has-error' : ''; ?>" name="studvertr" required>
                                     <option>Select option:</option>
                                     <option>Ziekte of zwangerschap en bevalling</option>
@@ -86,7 +86,7 @@
                         <h3> Door decaan in te vullen data: </h3>
                         <div class="form-group">
                             <label>
-                                Melding behandeld door studentendecaan (naam)
+                                Melding behandeld door studentendecaan (naam)<b style="color: red">*</b>
                             </label>
                             <input type="text" name="decaannaam" class="form-control" placeholder="Naam decaan" required>
                         </div>
@@ -94,7 +94,7 @@
     
                         <div class="form-group">
                             <label>
-                                Datum melding
+                                Datum melding<b style="color: red">*</b>
                             </label>
                             <input type="text" name="datmeldingdec" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
@@ -103,12 +103,12 @@
 
                         <div class="form-group">
                             <label>
-                                Wanneer is het probleem begonnen?
+                                Wanneer is het probleem begonnen?<b style="color: red">*</b>
                             </label>
                             <input type="text" name="datbegin" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                             <label>
-                                Tot wanneer speelde het probleem? (laat leeg als het nog speelt)
+                                Tot wanneer speelde het probleem?
                             </label>
                             <input type="text" name="dateinde" class="form-control" placeholder="JJJJ-MM-DD"
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
@@ -117,16 +117,16 @@
 
                         <div class="form-group">
                             <label>
-                                Toelichting
+                                Toelichting.
                             </label>
-                            <TEXTAREA Name="toelichting" ROWS="10" COLS="20" class="form-control" placeholder="Toelichting" required></TEXTAREA>
+                            <TEXTAREA Name="toelichting" ROWS="10" COLS="20" class="form-control" placeholder="Toelichting"></TEXTAREA>         <!-- Required???? -->
                             <!--                            <input type="text" name="toelichting" class="form-control" placeholder="Toelichting">-->
                         </div>
                         <br>
 
                         <div class="form-group">
                             <label>
-                                Hoeveel maanden ondersteuning adviseer jij? Evt. weging met extra studievertraging?
+                                Hoeveel maanden ondersteuning adviseer jij? Evt. weging met extra studievertraging?<b style="color: red">*</b>
                             </label>
                             <input type="text" name="advies" class="form-control" placeholder="Advies">
                         </div>

@@ -33,7 +33,9 @@
                     <form action="../Datascripts/addopleiding.php" method="post">
 
                         <br>
-                        <label>Sta jij op dit moment ingeschreven bij NHL Stenden?</label>
+                        <h5>Alles met een "<b style="color: red">*</b>" is verplicht</h5>
+                        <br>
+                        <label>Sta jij op dit moment ingeschreven bij NHL Stenden?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg1_err)) ? 'has-error' : ''; ?>" name="inschrijving" required>
                             <option>Select option:</option>
                             <option>Ja</option>
@@ -41,13 +43,13 @@
                         </select>
 
                         <br>
-                        <label>Voor welke opleiding sta jij op dit moment ingeschreven?</label>
+                        <label>Voor welke opleiding sta jij op dit moment ingeschreven?<b style="color: red">*</b></label>
                         <div class="form-group">
                             <input type="text" name="opleiding" class="form-control" placeholder="Opleiding" required>
                         </div>
                         
                         <br>
-                        <label>Welke opleidingvariant volg jij?</label>
+                        <label>Welke opleidingvariant volg jij?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg3_err)) ? 'has-error' : ''; ?>" name="opleidingvar" required>
                             <option>Select option:</option>
                             <option> Voltijd </option>
@@ -57,13 +59,13 @@
 
                         <br>
                             <div class="form-group">
-                            <label>Startdatum studie:</label>
+                            <label>Startdatum studie:<b style="color: red">*</b></label>
                             <input type="text" name="startdatum" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
 
                         <br>
-                        <label>Welke studiejaar zit jij?</label>
+                        <label>Welke studiejaar zit jij?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg4_err)) ? 'has-error' : ''; ?>" name="studiejaar" required>
                             <option>Select option:</option>
                             <option> 1 </option>
@@ -74,7 +76,7 @@
                         </select>
 
                         <br>
-                        <label>Heb je de studie tussendoor onderbroken?</label>
+                        <label>Heb je de studie tussendoor onderbroken?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg5_err)) ? 'has-error' : ''; ?>" name="onderbr" required>
                             <option>Select option:</option>
                             <option> Ja </option>
@@ -82,7 +84,7 @@
                         </select>
 
                         <br>
-                        <label>Heb jij je gedurende de studieonderbreking ook uitgeschreven bij NHL Stenden?</label>
+                        <label>Heb jij je gedurende de studieonderbreking ook uitgeschreven bij NHL Stenden?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg6_err)) ? 'has-error' : ''; ?>" name="uitschr" required>
                             <option>Select option:</option>
                             <option> Ja </option>
@@ -91,20 +93,20 @@
 
                         <br>
                         <label>Als jij voor andere studies ingeschreven hebt gestaan bij NHL Stenden schrijf hier welke studie(s) dit waren.</label>
-                        <label>(Als dit niet van toepassing is laat je dit veld leeg!)</label>
+
                         <div class="form-group">
                             <input type="text" name="andereopl" class="form-control" placeholder="Andere opleiding(en)">
                         </div>
 
                         <br>
                         <label>Als je voor andere HBO/Universiteit studies ingeschreven hebt gestaan bij andere instelling(en) schrijf hier dan de instelling, opleiding en datum van studie.) </label>
-                        <label>(Als dit niet van toepassing is laat je dit veld leeg!)</label>
+
                         <div class="form-group">
                             <input type="text" name="andereopl2" class="form-control" placeholder="Andere opleiding(en)">
                         </div>
 
                         <br>
-                        <label>Wat is de reden van studievertraging?</label>
+                        <label>Wat is de reden van studievertraging?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($studvertr_err)) ? 'has-error' : ''; ?>" name="studvertr" required>
                             <option>Select option:</option>
                             <option>Ziekte of zwangerschap en bevalling</option>
