@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Datascripts/Get_all_info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inkijk_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminDashboardScripts/isKlaar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datascripts/adddecaan.php" beforeDir="false" afterPath="$PROJECT_DIR$/Datascripts/adddecaan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datascripts/addomstandigheden.php" beforeDir="false" afterPath="$PROJECT_DIR$/Datascripts/addomstandigheden.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datascripts/addopleiding.php" beforeDir="false" afterPath="$PROJECT_DIR$/Datascripts/addopleiding.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datascripts/addpersoons.php" beforeDir="false" afterPath="$PROJECT_DIR$/Datascripts/addpersoons.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datascripts/addslb.php" beforeDir="false" afterPath="$PROJECT_DIR$/Datascripts/addslb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/aanvraagVerwijderen.script.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/aanvraagVerwijderen.script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datascripts/Get_all_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminDashboardScripts/Get_all_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/register.script.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/register.script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inkijk_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/inkijk_form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ovezichtAanvragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/ovezichtAanvragen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +70,19 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AdminDashboardScripts" />
       <recent name="$PROJECT_DIR$/" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="inkijk_form.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/inkijk_form.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.inkijk_form.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -113,7 +122,8 @@
       <workItem from="1585896308899" duration="12000" />
       <workItem from="1586333621584" duration="4292000" />
       <workItem from="1586341777639" duration="768000" />
-      <workItem from="1586759496211" duration="2996000" />
+      <workItem from="1586759496211" duration="7083000" />
+      <workItem from="1586779322442" duration="4932000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
@@ -178,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586757177377</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Gepusht na overleg.">
+      <created>1586769706277</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586769706277</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,9 +210,18 @@
     <MESSAGE value="Contact aangemaakt" />
     <MESSAGE value="Contact is ingevult en werkt" />
     <MESSAGE value="dropdown voor omstandigheden toegevoegd, aantal dingetjes aangepast." />
-    <option name="LAST_COMMIT_MESSAGE" value="dropdown voor omstandigheden toegevoegd, aantal dingetjes aangepast." />
+    <MESSAGE value="Gepusht na overleg." />
+    <option name="LAST_COMMIT_MESSAGE" value="Gepusht na overleg." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="742" y="212" width="679" height="815" key="#PHP" timestamp="1586775455502">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="742" y="212" width="679" height="815" key="#PHP/0.0.1920.1054@0.0.1920.1054" timestamp="1586775455502" />
+    <state x="555" y="136" width="804" height="674" key="#SQL_Dialects" timestamp="1586782226311">
+      <screen x="0" y="0" width="1920" height="949" />
+    </state>
+    <state x="555" y="136" width="804" height="674" key="#SQL_Dialects/0.0.1920.949@0.0.1920.949" timestamp="1586782226311" />
     <state x="555" y="189" width="804" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586333689953">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -208,55 +234,69 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="693" y="277" width="528" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1584609000167" />
-    <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2" timestamp="1586757176911">
+    <state x="769" y="305" width="631" height="631" key="#inkijk_form.php" timestamp="1586775456594">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
+    <state x="769" y="305" width="631" height="631" key="#inkijk_form.php/0.0.1920.1054@0.0.1920.1054" timestamp="1586775456594" />
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1586769705796">
+      <screen x="0" y="0" width="1920" height="949" />
+    </state>
     <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1586757176911" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1584959767233" />
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1586769705796" />
     <state x="184" y="89" width="1540" height="870" key="DiffContextDialog" timestamp="1585812847177">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="184" y="89" width="1540" height="870" key="DiffContextDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585812847177" />
-    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl" timestamp="1586761769647">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="743" y="257" width="428" height="481" key="FileChooserDialogImpl" timestamp="1586779614484">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
-    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl/0.0.1920.1054@0.0.1920.1054" timestamp="1586761769647" />
+    <state x="743" y="285" width="428" height="481" key="FileChooserDialogImpl/0.0.1920.1054@0.0.1920.1054" timestamp="1586775982604" />
+    <state x="743" y="257" key="FileChooserDialogImpl/0.0.1920.949@0.0.1920.949" timestamp="1586779614484" />
     <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose" timestamp="1584608789366">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose/0.0.1920.1054@0.0.1920.1054" timestamp="1584608789366" />
-    <state width="1294" height="281" key="GridCell.Tab.0.bottom" timestamp="1586756627801">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state width="1294" height="246" key="GridCell.Tab.0.bottom" timestamp="1586781822528">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state width="1294" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627801" />
-    <state width="1294" height="281" key="GridCell.Tab.0.center" timestamp="1586756627801">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state width="1294" height="246" key="GridCell.Tab.0.bottom/0.0.1920.949@0.0.1920.949" timestamp="1586781822528" />
+    <state width="1294" height="246" key="GridCell.Tab.0.center" timestamp="1586781822527">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state width="1294" height="281" key="GridCell.Tab.0.center/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627801" />
-    <state width="1294" height="281" key="GridCell.Tab.0.left" timestamp="1586756627800">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state width="1294" height="246" key="GridCell.Tab.0.center/0.0.1920.949@0.0.1920.949" timestamp="1586781822527" />
+    <state width="1294" height="246" key="GridCell.Tab.0.left" timestamp="1586781822527">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state width="1294" height="281" key="GridCell.Tab.0.left/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627800" />
-    <state width="1294" height="281" key="GridCell.Tab.0.right" timestamp="1586756627801">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state width="1294" height="246" key="GridCell.Tab.0.left/0.0.1920.949@0.0.1920.949" timestamp="1586781822527" />
+    <state width="1294" height="246" key="GridCell.Tab.0.right" timestamp="1586781822528">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state width="1294" height="281" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627801" />
+    <state width="1294" height="246" key="GridCell.Tab.0.right/0.0.1920.949@0.0.1920.949" timestamp="1586781822528" />
     <state width="256" height="477" key="HiddenNamespacesPopup" timestamp="1584961367883">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state width="256" height="477" key="HiddenNamespacesPopup/0.0.1920.1054@0.0.1920.1054" timestamp="1584961367883" />
-    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog" timestamp="1586761671412">
+    <state x="596" y="344" width="721" height="363" key="NewPhpClassDialog" timestamp="1586772972259">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586761671412" />
+    <state x="596" y="344" width="721" height="363" key="NewPhpClassDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586772972259" />
+    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog" timestamp="1586772984907">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="757" y="453" width="393" height="145" key="NewPhpFileDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586772984907" />
     <state x="708" y="239" width="493" height="570" key="RollbackChangesDialog" timestamp="1585563185976">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="708" y="239" width="493" height="570" key="RollbackChangesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563185976" />
-    <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1586757183010">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1586769712970">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1586757183010" />
+    <state x="555" y="237" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1586769712970" />
     <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586756612139">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -265,10 +305,11 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="721" y="356" width="471" height="335" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585054507718" />
-    <state x="1106" y="248" width="717" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586759096138">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="1106" y="223" width="717" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586779098638">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="1106" y="248" width="717" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586759096138" />
+    <state x="1106" y="223" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.949@0.0.1920.949" timestamp="1586779098638" />
     <state x="813" y="421" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1586333716775">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -281,11 +322,15 @@
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.949@0.0.1920.949" timestamp="1584897567175" />
-    <state x="643" y="321" width="627" height="366" key="git4idea.merge.GitPullDialog" timestamp="1586756434377">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog" timestamp="1586779186976">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586756434377" />
-    <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog/0.0.1920.949@0.0.1920.949" timestamp="1586338424625" />
+    <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog/0.0.1920.949@0.0.1920.949" timestamp="1586779186976" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1586785492265">
+      <screen x="0" y="0" width="1920" height="949" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1920.949@0.0.1920.949" timestamp="1586785492265" />
     <state x="622" y="241" key="run.anything.popup" timestamp="1586761475137">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
