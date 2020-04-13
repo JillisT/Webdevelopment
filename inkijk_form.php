@@ -69,7 +69,7 @@
                     }
                     ?>
                     </tbody>
-<br>
+                    <br>
                     <!-- Opleiding -->
                     <tbody>
                     <?php

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AdminDashboardScripts/isKlaar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datascripts/Get_all_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/AdminDashboardScripts/Get_all_info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/register.script.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/register.script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inkijk_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/inkijk_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ovezichtAanvragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/ovezichtAanvragen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +29,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="DataDB" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -124,6 +106,7 @@
       <workItem from="1586341777639" duration="768000" />
       <workItem from="1586759496211" duration="7083000" />
       <workItem from="1586779322442" duration="4932000" />
+      <workItem from="1586796304054" duration="170000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
