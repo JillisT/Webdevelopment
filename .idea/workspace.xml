@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL voor DataBase" beforeDir="false" afterPath="$PROJECT_DIR$/SQL voor DataBase" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +125,7 @@
       <workItem from="1586759496211" duration="7083000" />
       <workItem from="1586779322442" duration="4932000" />
       <workItem from="1586796304054" duration="583000" />
+      <workItem from="1586798845943" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
@@ -248,11 +248,11 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="769" y="305" width="631" height="631" key="#inkijk_form.php/0.0.1920.1054@0.0.1920.1054" timestamp="1586775456594" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1586796590807">
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1586796906393">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1586757176911" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1586796590807" />
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1586796906393" />
     <state x="184" y="89" width="1540" height="870" key="DiffContextDialog" timestamp="1585812847177">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -266,25 +266,25 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="798" y="454" width="323" height="143" key="Github.Dialog.Accounts.Choose/0.0.1920.1054@0.0.1920.1054" timestamp="1584608789366" />
-    <state width="1294" height="246" key="GridCell.Tab.0.bottom" timestamp="1586781822528">
-      <screen x="0" y="0" width="1920" height="949" />
+    <state width="1294" height="280" key="GridCell.Tab.0.bottom" timestamp="1586798950440">
+      <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627801" />
+    <state width="1294" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1054@0.0.1920.1054" timestamp="1586798950440" />
     <state width="1294" height="246" key="GridCell.Tab.0.bottom/0.0.1920.949@0.0.1920.949" timestamp="1586781822528" />
-    <state width="1294" height="246" key="GridCell.Tab.0.center" timestamp="1586781822527">
-      <screen x="0" y="0" width="1920" height="949" />
+    <state width="1294" height="280" key="GridCell.Tab.0.center" timestamp="1586798950439">
+      <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.center/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627801" />
+    <state width="1294" height="280" key="GridCell.Tab.0.center/0.0.1920.1054@0.0.1920.1054" timestamp="1586798950439" />
     <state width="1294" height="246" key="GridCell.Tab.0.center/0.0.1920.949@0.0.1920.949" timestamp="1586781822527" />
-    <state width="1294" height="246" key="GridCell.Tab.0.left" timestamp="1586781822527">
-      <screen x="0" y="0" width="1920" height="949" />
+    <state width="1294" height="280" key="GridCell.Tab.0.left" timestamp="1586798950438">
+      <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.left/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627800" />
+    <state width="1294" height="280" key="GridCell.Tab.0.left/0.0.1920.1054@0.0.1920.1054" timestamp="1586798950438" />
     <state width="1294" height="246" key="GridCell.Tab.0.left/0.0.1920.949@0.0.1920.949" timestamp="1586781822527" />
-    <state width="1294" height="246" key="GridCell.Tab.0.right" timestamp="1586781822528">
-      <screen x="0" y="0" width="1920" height="949" />
+    <state width="1294" height="280" key="GridCell.Tab.0.right" timestamp="1586798950439">
+      <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627801" />
+    <state width="1294" height="280" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1586798950439" />
     <state width="1294" height="246" key="GridCell.Tab.0.right/0.0.1920.949@0.0.1920.949" timestamp="1586781822528" />
     <state width="256" height="430" key="HiddenNamespacesPopup" timestamp="1586796673193">
       <screen x="0" y="0" width="1920" height="949" />
@@ -303,15 +303,15 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="708" y="239" width="493" height="570" key="RollbackChangesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563185976" />
-    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1586796598322">
+    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1586796919167">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1586757183010" />
-    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1586796598322" />
-    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586756612139">
+    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1586796919167" />
+    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586798897765">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1054@0.0.1920.1054" timestamp="1586756612139" />
+    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1054@0.0.1920.1054" timestamp="1586798897765" />
     <state x="721" y="356" width="471" height="335" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1585054507718">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -334,10 +334,10 @@
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.949@0.0.1920.949" timestamp="1584897567175" />
-    <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog" timestamp="1586779186976">
-      <screen x="0" y="0" width="1920" height="949" />
+    <state x="643" y="321" width="627" height="366" key="git4idea.merge.GitPullDialog" timestamp="1586798881882">
+      <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586756434377" />
+    <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586798881882" />
     <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog/0.0.1920.949@0.0.1920.949" timestamp="1586779186976" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1586785492265">
       <screen x="0" y="0" width="1920" height="949" />
