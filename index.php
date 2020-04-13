@@ -30,6 +30,9 @@
                 <div class="col-sm-12 col-md-12">
                     <div class="card mb-4">
                         <div class="card-body text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="include/loguit.script.php">Reset sessies</a>
+                            </li>
                             <h5 class="card-title">Kom ik in aanmerking voor het profileringsfonds?</h5>
                             <a href="login.php" class="card-link">Heb je al een account? Log hier in.</a>
                         </div>
