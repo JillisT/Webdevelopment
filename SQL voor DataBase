@@ -37,7 +37,8 @@ create table student
     telefoonnummer     int          null,
     email              varchar(30)  null,
     bsn                int          null,
-    iban               varchar(30)  null
+    iban               varchar(30)  null,
+    ingevuld           varchar(2)
 );
 
 create table opleiding
@@ -52,7 +53,8 @@ create table opleiding
     andere_studie      tinytext null,
     naam_andere_studie tinytext null,
     reden              tinytext null,
-    id                 int      null
+    id                 int      null,
+        ingevuld           varchar(2)
 );
 
 create table omstandigheden
@@ -76,7 +78,8 @@ create table omstandigheden
     studieonderdelen         text     null,
     duur_vertraging          int      null,
     invloed_omstandigheden   text     null,
-    beperken_omstandigheden  text     null
+    beperken_omstandigheden  text     null,
+        ingevuld           varchar(2)
 );
 
 
@@ -93,6 +96,7 @@ create table decaan
     einddatum           date        null,
     toelichting         text        null,
     advies_duur         int        null,
+        ingevuld           varchar(2)
 
 );
 
@@ -113,7 +117,8 @@ create table slb
     mogelijkheden_gezakt tinytext null,
     extra_info text null,
     naam_slb tinytext null,
-    functie_slb tinytext null
+    functie_slb tinytext null,
+        ingevuld           varchar(2)
 );
 
 create table studievoortgang

@@ -24,7 +24,7 @@ if (isset($_SESSION["loggedin"])) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <?php
-                        if (isset($_SESSION["type"]) !== "admin") {
+                        if ($_SESSION["type"] !== "admin") {
                             ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="dashboard.php">Dashboard</a>

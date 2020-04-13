@@ -107,23 +107,9 @@
 
                         <br>
                         <label>Wat is de reden van studievertraging?<b style="color: red">*</b></label>
-                        <select class="form-control <?php echo (!empty($studvertr_err)) ? 'has-error' : ''; ?>" name="studvertr" required>
-                            <option>Select option:</option>
-                            <option>Ziekte of zwangerschap en bevalling</option>
-                            <option>Een functiestoornis, handicap of chronische ziekte</option>
-                            <option>Bijzondere familieomstandigheden</option>
-                            <option> Een onvoldoende studeerbare opleiding</option>
-                            <option>De door de hogeschool toegekende status van topsporter</option>
-
-                            <!-- dit moet korter!!! -->
-                            <option>Andere dan de in de hierboven genoemde onderdelen bedoelde omstandigheden die, indien
-                                een daarop gebaseerd verzoek om financiële ondersteuning door het College van Bestuur niet
-                                zou worden gehonoreerd, zouden leiden tot een onbillijkheid van overwegende aard</option>
-                            <!--  -->
-
-                            <option>Activiteiten op bestuurlijk of maatschappelijk gebied die naar het oordeel van het College van
-                                Bestuur mede in het belang zijn van de hogeschool of van het onderwijs dat de student volgt</option>
-                        </select>
+                        <?php
+                        include "../include/dropdown.php";
+                        ?>
 
                         
                         <label> NB: Studenten die bestuurslid zijn van een erkende studentenvereniging, zoals benoemd in

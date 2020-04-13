@@ -6,6 +6,9 @@
     if(!isset($_SESSION["loggedin"])){
         header("location: index.php");
     }
+    if($_SESSION["type"] === "admin" ){
+        header("location: ovezichtAanvragen.php");
+    }
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
     ?>
