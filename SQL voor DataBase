@@ -121,6 +121,7 @@ create table slb
 
 create table studievoortgang
 (
+studentnummer int(10),
     id int ,
     ec_jaar1 int ,
     jaar1 int,

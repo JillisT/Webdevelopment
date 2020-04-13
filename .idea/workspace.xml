@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL voor DataBase" beforeDir="false" afterPath="$PROJECT_DIR$/SQL voor DataBase" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,24 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="studievoortgang: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -106,7 +125,7 @@
       <workItem from="1586341777639" duration="768000" />
       <workItem from="1586759496211" duration="7083000" />
       <workItem from="1586779322442" duration="4932000" />
-      <workItem from="1586796304054" duration="170000" />
+      <workItem from="1586796304054" duration="583000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
@@ -178,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586769706277</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix. Hoop ik...">
+      <created>1586796591311</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586796591311</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +220,8 @@
     <MESSAGE value="Contact is ingevult en werkt" />
     <MESSAGE value="dropdown voor omstandigheden toegevoegd, aantal dingetjes aangepast." />
     <MESSAGE value="Gepusht na overleg." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gepusht na overleg." />
+    <MESSAGE value="Fix. Hoop ik..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix. Hoop ik..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="742" y="212" width="679" height="815" key="#PHP" timestamp="1586775455502">
@@ -221,11 +248,11 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="769" y="305" width="631" height="631" key="#inkijk_form.php/0.0.1920.1054@0.0.1920.1054" timestamp="1586775456594" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1586769705796">
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1586796590807">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1586757176911" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1586769705796" />
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1586796590807" />
     <state x="184" y="89" width="1540" height="870" key="DiffContextDialog" timestamp="1585812847177">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -259,10 +286,11 @@
     </state>
     <state width="1294" height="281" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1586756627801" />
     <state width="1294" height="246" key="GridCell.Tab.0.right/0.0.1920.949@0.0.1920.949" timestamp="1586781822528" />
-    <state width="256" height="477" key="HiddenNamespacesPopup" timestamp="1584961367883">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state width="256" height="430" key="HiddenNamespacesPopup" timestamp="1586796673193">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state width="256" height="477" key="HiddenNamespacesPopup/0.0.1920.1054@0.0.1920.1054" timestamp="1584961367883" />
+    <state width="256" height="430" key="HiddenNamespacesPopup/0.0.1920.949@0.0.1920.949" timestamp="1586796673193" />
     <state x="596" y="344" width="721" height="363" key="NewPhpClassDialog" timestamp="1586772972259">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -275,11 +303,11 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="708" y="239" width="493" height="570" key="RollbackChangesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563185976" />
-    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1586769712970">
+    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1586796598322">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1586757183010" />
-    <state x="555" y="237" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1586769712970" />
+    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1586796598322" />
     <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586756612139">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -293,10 +321,11 @@
     </state>
     <state x="1106" y="248" width="717" height="546" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586759096138" />
     <state x="1106" y="223" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.949@0.0.1920.949" timestamp="1586779098638" />
-    <state x="813" y="421" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1586333716775">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="813" y="379" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1586796662617">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="813" y="421" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586333716775" />
+    <state x="813" y="379" width="287" height="309" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.949@0.0.1920.949" timestamp="1586796662617" />
     <state x="98" y="99" width="1724" height="857" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586758165350">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
