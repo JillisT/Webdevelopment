@@ -114,6 +114,9 @@ if (isset($_SESSION["loggedin"])) {
                         <li class="nav-item">
                             <a class="nav-link" href="dropdown.php">Dropdown test</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="include/loguit.script.php">Reset sessies</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
