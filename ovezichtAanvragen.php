@@ -29,22 +29,38 @@ if (!isset($_SESSION["type"]) === "admin") {
                 <?php
                 require "include/NavBar.php";
                 ?>
-                <h3 class="mt-5">Jan de Jong</h3>
+                <h3 class="mt-5">Overzicht aanvragen</h3>
                 <div class="col-sm-12 col-md-12">
                     <div class="card" style="height: 400px;">
                         <div class="row">
                             <div class="col-sm-2 col-md-6">
-                                <p>Dit is de pagina voor de Administatie.</p>
-                            </div>
-                            <div class="col-sm-2 col-md-6 d-flex flex-row-reverse">
-                                <form method="post">
-                                    <button class="btn btn-primary"
-                                            style="margin-top: 330px; margin-right: 30px; margin-left: 10px;"
-                                            type="submit">Overzicht aanvragen
-                                    </button>
-                                </form>
-                                <div class="align-self-end"><p>Er zijn nog geen aanvraag gedaan.</p></div>
-                            </div>
+
+                            <table class="table is-bordered">
+                                <tr>
+                                    <!-- Table Header. -->
+                                    <th>Studentennummer</th>
+                                    <th>Naam</th>
+                                    <th>Inkijken</th>
+                                </tr>
+                                <?php
+                                $sql = "SELECT studentnummer, roepnaam, achternaam FROM student where ingevuld = 'ja'";
+                                $result = $conn->query($sql);
+
+                                if ($result->rowCount() > 0) {
+                                    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                                        ?>
+
+                                        <td><?php echo $row["studentnummer"] ?></td>
+                                        <td><?php echo $row["roepnaam"] . " " . $row["achternaam"]; ?></td>
+                                        <form action="inkijk_form.php?ID=<?php echo $row["ID"];?>" method="post">
+                                        <td><input type="submit" class="btn btn-primary" value="Inlijken"></td>
+                                        </form>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </table>
+
                         </div>
                     </div>
                 </div>

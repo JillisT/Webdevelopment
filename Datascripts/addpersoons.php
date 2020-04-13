@@ -46,12 +46,20 @@ if (isset($_POST['studentnum'], $_POST['achternaam'], $_POST['roepnaam'], $_POST
         $param_email = $email;
         $param_bsn = $bsn;
         $param_iban = $iban;
-        
 
+
+        $ID = $_SESSION["ID"];
         if ($stmt->execute())
         {
-            // Stuur door naar opleidingsgegevens
-            header("Location: ../vragenform/opleidingsgegevens.php");
+            $sql = "UPDATE student SET ingevuld = 'ja' WHERE id = :ID";
+            if ($stmt = $conn->prepare($sql)) {
+                $stmt->bindParam(":ID", $ID, PDO::PARAM_INT);
+                if ($stmt->execute()) {
+                    // Stuur door naar opleidingsgegevens
+                    header("Location: ../vragenform/opleidingsgegevens.php");
+                }
+            }
+
         }
         else
         {

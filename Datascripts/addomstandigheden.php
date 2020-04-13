@@ -81,11 +81,18 @@
             $param_invloed_omstandigheden = $invloed_omstandigheden;
             $param_beperken_omstandigheden = $beperken_omstandigheden;
             
-    
+            $ID = $_SESSION["ID"];
             if ($stmt->execute())
             {
-                // Stuur door naar opleidingsgegevens
-                header("Location: ../dashboard.php");
+                $sql = "UPDATE omstandigheden SET ingevuld = 'ja' WHERE id = :ID";
+                if ($stmt = $conn->prepare($sql)) {
+                    $stmt->bindParam(":ID", $ID, PDO::PARAM_INT);
+                    if ($stmt->execute()) {
+                        // Stuur door naar opleidingsgegevens
+                        header("Location: ../dashboard.php");
+                    }
+                }
+
             } else
             {
                 echo "Er is iets fout gegaan. Probeer het later nog eens.";

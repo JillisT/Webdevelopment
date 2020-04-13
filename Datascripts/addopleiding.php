@@ -49,12 +49,20 @@
             $param_andere_studie = $andere_studie;
             $param_naam_andere_studie = $naam_andere_studie;
             $param_reden = $reden;
-            
-            
+
+
+            $ID = $_SESSION["ID"];
             if ($stmt->execute())
             {
-                // Stuur door naar omstandighedengegevens
-                header("Location: ../vragenform/omstandighedengegevens.php");
+                $sql = "UPDATE opleiding SET ingevuld = 'ja' WHERE id = :ID";
+                if ($stmt = $conn->prepare($sql)) {
+                    $stmt->bindParam(":ID", $ID, PDO::PARAM_INT);
+                    if ($stmt->execute()) {
+                        // Stuur door naar omstandighedengegevens
+                        header("Location: ../vragenform/omstandighedengegevens.php");
+                    }
+                }
+
             } else
             {
                 echo "Er is iets fout gegaan. Probeer het later nog eens.";

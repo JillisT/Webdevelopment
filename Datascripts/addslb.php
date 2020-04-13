@@ -66,12 +66,19 @@
             $param_advies_duur = $extra_info;
             $param_naam_slb = $naam_slb;
             $param_functie_slb = $functie_slb;
-            
-            
+
+
+            $ID = $_SESSION["ID"];
             if ($stmt->execute())
             {
-                // Stuur door naar omstandighedengegevens
-                header("Location: ../dashboard.php");
+                $sql = "UPDATE slb SET ingevuld = 'ja' WHERE id = :ID";
+                if ($stmt = $conn->prepare($sql)) {
+                    $stmt->bindParam(":ID", $ID, PDO::PARAM_INT);
+                    if ($stmt->execute()) {
+                        // Stuur door naar omstandighedengegevens
+                        header("Location: ../dashboard.php");
+                    }
+                }
             } else
             {
                 echo "Er is iets fout gegaan. Probeer het later nog eens.";
