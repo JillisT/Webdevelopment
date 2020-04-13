@@ -1,7 +1,7 @@
 <?php
 include "DataBase/connectToDatabase.php";
 session_start();
-if (!isset($_SESSION["type"]) === "admin") {
+if (($_SESSION["type"]) !== "admin") {
     header("location: dashboard.php");
 } else { ?>
 
@@ -35,44 +35,64 @@ if (!isset($_SESSION["type"]) === "admin") {
                         <div class="row">
                             <div class="col-sm-2 col-md-6">
 
-                            <table class="table is-bordered">
-                                <tr>
-                                    <!-- Table Header. -->
-                                    <th>Studentennummer</th>
-                                    <th>Naam</th>
-                                    <th>Inkijken</th>
-                                </tr>
-                                <?php
-                                $sql = "SELECT studentnummer, roepnaam, achternaam FROM student where ingevuld = 'ja'";
-                                $result = $conn->query($sql);
+                                <table class="table is-bordered">
+                                    <tr>
+                                        <!-- Table Header. -->
+                                        <th>Studentennummer</th>
+                                        <th>Naam</th>
+                                        <th>Inkijken</th>
+                                    </tr>
+                                    <?php
+                                    $sql = "SELECT studentnummer FROM decaan WHERE ingevuld = 'ja'";
 
-                                if ($result->rowCount() > 0) {
-                                    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-                                        ?>
+                                    if ($stmt = $conn->prepare($sql)) {
+                                        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+                                        if ($stmt->execute()) {
+                                            if ($sql === 'ja') {
+                                                $sql = "SELECT studentnummer FROM slb WHERE ingevuld = 'ja'";
+                                                if ($stmt = $conn->prepare($sql)) {
+                                                    $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+                                                    if ($stmt->execute()) {
+                                                        if ($sql === 'ja') {
 
-                                        <td><?php echo $row["studentnummer"] ?></td>
-                                        <td><?php echo $row["roepnaam"] . " " . $row["achternaam"]; ?></td>
-                                        <form action="inkijk_form.php?ID=<?php echo $row["ID"];?>" method="post">
-                                        <td><input type="submit" class="btn btn-primary" value="Inlijken"></td>
-                                        </form>
-                                        <?php
+                                                            $sql = "SELECT studentnummer, roepnaam, achternaam ,id FROM student where ingevuld = 'ja'";
+                                                            $result = $conn->query($sql);
+
+                                                            if ($result->rowCount() > 0) {
+                                                                while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                                                                    ?>
+                                                                    <tr>
+                                                                        <td><?php echo $row["studentnummer"] ?></td>
+                                                                        <td><?php echo $row["roepnaam"] . " " . $row["achternaam"]; ?></td>
+                                                                        <td>
+                                                                            <a href="inkijk_form.php?id=<?php echo $row["id"]; ?>"
+                                                                               class="button is-danger">Inkijken</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <?php
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
-                                }
-                                ?>
-                            </table>
+                                    ?>
+                                </table>
 
+                            </div>
                         </div>
                     </div>
+
                 </div>
+                <!-- container body end -->
 
+                <!-- white space links -->
+                <div class="col-lg-2"></div>
             </div>
-            <!-- container body end -->
-
-            <!-- white space links -->
-            <div class="col-lg-2"></div>
         </div>
-    </div>
-    <!-- row end -->
+        <!-- row end -->
 
     </body>
     </html>

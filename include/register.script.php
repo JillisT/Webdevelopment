@@ -79,12 +79,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     //Set account type
-    $type = $_POST["type"];
-    if($type = "student"){
-        $type = "student";
-    } else if ($type = "SLBer"){
-        $type = "SLBer";
-    }else $type = "decaan";
+    if(isset($_POST["type"])) {
+        $type = $_POST["type"];
+    }
+
 
     // Check input errors before inserting in database
     if(empty($gebruikersnaam_err) && empty($wachtwoord_err) && empty($herhaal_wachtwoord_err)){

@@ -44,11 +44,11 @@
                     </div>
                     <div class="form-group">
                         <label>account type:</label><br>
-                        <input type="radio" id="student" name="type" value="student" checked="checked">
+                        <input type="radio"  name="type" value="student" checked="checked">
                         <label for="male">Student</label><br>
-                        <input type="radio" id="SLBer" name="type" value="SLBer">
+                        <input type="radio"  name="type" value="SLBer">
                         <label for="female">SLB'er (Studieloopbaanbegeleider)</label><br>
-                        <input type="radio" id="decaan" name="type" value="decaan">
+                        <input type="radio"  name="type" value="decaan">
                         <label for="other">Decaan</label>
                     </div>
                     <div class="form-group">
