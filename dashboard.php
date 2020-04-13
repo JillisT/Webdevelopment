@@ -32,8 +32,9 @@
 
             //Data laten zien
             $ID = $_SESSION["ID"];
-            $studentennummer = $_SESSION["gebruikersnaam"];
+            $studentnummer = "";
             $sql = "SELECT aanvraag_num FROM users WHERE ID = :ID";
+            
             $num = "<null>";
             if($result = $conn->prepare($sql)){
                 // Bind variables to the prepared statement as parameters
@@ -53,10 +54,83 @@
                 // Close statement
                 unset($stmt);
             }
+            $student = "SELECT * FROM student WHERE id =:ID";
+                if($result = $conn->prepare($student)){
+                    // Bind variables to the prepared statement as parameters
+                    $result->bindParam(":ID", $ID, PDO::PARAM_INT);
+                    
+                    // Attempt to execute the prepared statement
+                    if($result->execute())
+                    {
+                        if ($result->rowCount() > 0)
+                        {
+                            while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                                $studentnummer= $row["studentnummer"];
+                                $achternaam= $row["achternaam"];
+                                $roepnaam= $row["roepnaam"];
+                                $klassennaam= $row["klassennaam"];
+                                $geboortedatum= $row["geboortedatum"];
+                                $adres= $row["studentnummer"];
+                                $telefoonnummer = $row["telefoonnummer"];
+                                $email= $row["email"];
+                                $bsn= $row["studentnummer"];
+                                $iban= $row["studentnummer"];
+                            }
+                        }
+                        else $studentnummer = "1";
+                    }
+                    else
+                    {
+                        echo "Er is iets fout gegaan. Probeer het later nog eens.";
+                    }
+        
+                    // Close statement
+                    unset($stmt);
+                }
+            $opleiding = "SELECT * FROM opleiding where id =:ID";
+                if($result = $conn->prepare($sql)){
+                    // Bind variables to the prepared statement as parameters
+                    $result->bindParam(":ID", $ID, PDO::PARAM_INT);
+        
+                    // Attempt to execute the prepared statement
+                    if($result->execute()){
+                        if ($result->rowCount() > 0) {
+                            while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                                $num = $row["aanvraag_num"];
+                            }
+                        } else $num = "-";
+                    } else{
+                        echo "Er is iets fout gegaan. Probeer het later nog eens.";
+                    }
+        
+                    // Close statement
+                    unset($stmt);
+                }
+            $omstandigheden = "SELECT * FROM omstandigheden where id =:ID";
+                if($result = $conn->prepare($sql)){
+                    // Bind variables to the prepared statement as parameters
+                    $result->bindParam(":ID", $ID, PDO::PARAM_INT);
+        
+                    // Attempt to execute the prepared statement
+                    if($result->execute()){
+                        if ($result->rowCount() > 0) {
+                            while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                                $num = $row["aanvraag_num"];
+                            }
+                        } else $num = "-";
+                    } else{
+                        echo "Er is iets fout gegaan. Probeer het later nog eens.";
+                    }
+        
+                    // Close statement
+                    unset($stmt);
+                }
 
-            ?>
-
-            <h3 class="mt-5">Jan de Jong</h3>
+            
+                ?>
+                
+            </td>
+            <h3 class="mt-5">Overzicht</h3>
             <div class="col-sm-12 col-md-12">
                 <div class="card" style="height: 400px;">
                     <div class="row">
@@ -64,25 +138,59 @@
                             <br>
                             <table>
                                 <tr>
-                                    <td>Onder de brug 24</td>
-                                </tr>
-                                <tr>
-                                    <td>1234 DE, Leeuwarden</td>
+                                    <td>Persoonsgegevens:</td>
                                 </tr>
                                 <tr class="blank_row">
                                     <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 200px">Studie:</td>
-                                    <td>HBO</td>
-                                </tr>
+                               
                                 <tr>
                                     <td style="width: 200px">Studentennummer:</td>
-                                    <td><?php echo $studentennummer;?></td>
+
+                                    <td><?php echo $studentnummer;?></td>
                                 </tr>
                                 <tr>
                                     <td style="width: 200px">Aanvraagnummer:</td>
                                     <td> <?php echo $num ?> </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px">Achternaam:</td>
+        
+                                    <td><?php echo $achternaam;?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px">Roepnaam:</td>
+                                    <td> <?php echo $roepnaam ?> </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px">Klassennaam:</td>
+        
+                                    <td><?php echo $klassennaam;?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px">Geboortedatum:</td>
+                                    <td> <?php echo $geboortedatum ?> </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px">Adres:</td>
+        
+                                    <td><?php echo $adres;?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px">Telefoonnummer:</td>
+                                    <td> <?php echo $telefoonnummer ?> </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 200px">Email:</td>
+        
+                                    <td><?php echo $email;?></td>
+                                </tr>
+                                <tr>
+                                    <td style="...">BSN:</td>
+                                    <td> <?php echo $bsn ?> </td>
+                                </tr>
+                                <tr>
+                                    <td style="...">IBAN:</td>
+                                    <td> <?php echo $iban ?> </td>
                                 </tr>
                             </table>
                         </div>
@@ -109,6 +217,7 @@
                                         <?php
                                     }
                             ?>
+                            
                         </div>
                     </div>
                 </div>
