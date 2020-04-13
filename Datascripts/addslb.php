@@ -5,7 +5,9 @@
     
     if (isset($_POST['naamstud'], $_POST['studnum'], $_POST['studopl'], $_POST['datmeldingstudbeg'], $_POST['dateinde'],
         $_POST['duuromst'], $_POST['maxecs'], $_POST['behecs'], $_POST['progressecs'], $_POST['tebehecs'],
-        $_POST['maandennodig'], $_POST['regeling'], $_POST['extrainfo'], $_POST['naam'], $_POST['functie']))
+        $_POST['maandennodig'], $_POST['jaar1'],$_POST['jaar2'],$_POST['jaar3'],$_POST['jaar4'],$_POST['jaar5'],
+        $_POST['jaar6'],$_POST['jaar7'],$_POST['ec1'],$_POST['ec2'],$_POST['ec3'],$_POST['ec4'], $_POST['ec5'],
+        $_POST['ec6'],$_POST['ec7'], $_POST['regeling'], $_POST['extrainfo'], $_POST['naam'], $_POST['functie']))
     {
         $id = $_SESSION['ID'];
         $naam_student = $_POST['naamstud'];
@@ -19,6 +21,20 @@
         $ec_totaal = $_POST['progressecs'];
         $ec_nog_nodig = $_POST['tebehecs'];
         $tijd_nodig= $_POST['maandennodig'];
+        $jaar1 = $_POST['jaar1'];
+        $jaar2 = $_POST['jaar2'];
+        $jaar3 = $_POST['jaar3'];
+        $jaar4 = $_POST['jaar4'];
+        $jaar5 = $_POST['jaar5'];
+        $jaar6 = $_POST['jaar6'];
+        $jaar7 = $_POST['jaar7'];
+        $ec1 = $_POST['ec1'];
+        $ec2 = $_POST['ec2'];
+        $ec3 = $_POST['ec3'];
+        $ec4 = $_POST['ec4'];
+        $ec5 = $_POST['ec5'];
+        $ec6 = $_POST['ec6'];
+        $ec7 = $_POST['ec7'];
         $mogelijkheden_gezakt = $_POST['regeling'];
         $extra_info = $_POST['extrainfo'];
         $naam_slb= $_POST['naam'];
@@ -28,9 +44,12 @@
         $sql = "INSERT INTO slb(id, naam_student, studentnummer, opleiding, begindatum, einddatum, duur, ec_mogelijk,
                 ec_behaald, ec_totaal, ec_nog_nodig, tijd_nodig, mogelijkheden_gezakt, extra_info, naam_slb, functie_slb)
                 value (:id, :naam_student, :studentnummer, :opleiding, :begindatum, :einddatum, :duur, :ec_mogelijk,
-                :ec_behaald, :ec_totaal, :ec_nog_nodig, :tijd_nodig, :mogelijkheden_gezakt, :extra_info, :naam_slb, :functie_slb)";
-        
-        
+                :ec_behaald, :ec_totaal, :ec_nog_nodig, :tijd_nodig, :mogelijkheden_gezakt, :extra_info, :naam_slb, :functie_slb);
+                
+                INSERT INTO studievoortgang(id, ec_jaar1, jaar1, ec_jaar2, jaar2, ec_jaar3, jaar3, ec_jaar4, jaar4, ec_jaar5, jaar5, ec_jaar6, jaar6, ec_jaar7, jaar7)
+                values (:id, :ec_jaar1, :jaar1, :ec_jaar2, :jaar2, :ec_jaar3, :jaar3, :ec_jaar4, :jaar4, :ec_jaar5, :jaar5, :ec_jaar6, :jaar6, :ec_jaar7, :jaar7)
+                ";
+               
         if ($stmt = $conn->prepare($sql))
         {
             $stmt->bindParam(":id", $param_id, PDO::PARAM_INT);
@@ -66,8 +85,40 @@
             $param_advies_duur = $extra_info;
             $param_naam_slb = $naam_slb;
             $param_functie_slb = $functie_slb;
-
-
+    
+            $stmt->bindParam(":id", $param_id, PDO::PARAM_INT);
+            $stmt->bindParam(":ec_jaar1", $param_ec_jaar1, PDO::PARAM_INT);
+            $stmt->bindParam(":jaar1", $param_jaar1, PDO::PARAM_INT);
+            $stmt->bindParam(":ec_jaar2", $param_ec_jaar2, PDO::PARAM_INT);
+            $stmt->bindParam(":jaar2", $param_jaar2, PDO::PARAM_INT);
+            $stmt->bindParam(":ec_jaar3", $param_ec_jaar3, PDO::PARAM_INT);
+            $stmt->bindParam(":jaar3", $param_jaar3, PDO::PARAM_INT);
+            $stmt->bindParam(":ec_jaar4", $param_ec_jaar4, PDO::PARAM_INT);
+            $stmt->bindParam(":jaar4", $param_jaar4, PDO::PARAM_INT);
+            $stmt->bindParam(":ec_jaar5", $param_ec_jaar5, PDO::PARAM_INT);
+            $stmt->bindParam(":jaar5", $param_jaar5, PDO::PARAM_INT);
+            $stmt->bindParam(":ec_jaar6", $param_ec_jaar6, PDO::PARAM_INT);
+            $stmt->bindParam(":jaar6", $param_jaar6, PDO::PARAM_INT);
+            $stmt->bindParam(":ec_jaar7", $param_ec_jaar7, PDO::PARAM_INT);
+            $stmt->bindParam(":jaar7", $param_jaar7, PDO::PARAM_INT);
+    
+            $param_id = $id;
+            $param_ec_jaar1 = $jaar1;
+            $param_ec_jaar2 = $jaar2;
+            $param_ec_jaar3 = $jaar3;
+            $param_ec_jaar4 = $jaar4;
+            $param_ec_jaar5 = $jaar5;
+            $param_ec_jaar6 = $jaar6;
+            $param_ec_jaar7 = $jaar7;
+            $param_jaar1 = $ec1;
+            $param_jaar2 = $ec2;
+            $param_jaar3 = $ec3;
+            $param_jaar4 = $ec4;
+            $param_jaar5 = $ec5;
+            $param_jaar6 = $ec6;
+            $param_jaar7 = $ec7;
+    
+    
             $ID = $_SESSION["ID"];
             if ($stmt->execute())
             {
@@ -85,7 +136,9 @@
             }
             // Close statement
             unset($stmt);
+        
         }
+
 
 // Close connection
         unset($pdo);

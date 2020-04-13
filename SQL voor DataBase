@@ -121,7 +121,7 @@ create table slb
 
 create table studievoortgang
 (
-    studentnummer int unsigned primary key not null ,
+    id int ,
     ec_jaar1 int ,
     jaar1 int,
     ec_jaar2 int ,

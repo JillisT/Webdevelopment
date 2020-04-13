@@ -109,13 +109,13 @@
                             <br>
 
                                 <label>
-                                    Behaalde EC's in jaar <input type="text" required>: <input type="text" required><b style="color: red">*</b>.
-                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
-                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
-                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
-                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
-                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
-                                    Behaalde EC's in jaar <input type="text">: <input type="text">.
+                                    Behaalde EC's in jaar <input type="text" name ="jaar1" required>: <input type="text" name ="ec1" required><b style="color: red">*</b>.
+                                    Behaalde EC's in jaar <input type="text" name ="jaar2">: <input type="text" name ="ec2">.
+                                    Behaalde EC's in jaar <input type="text" name ="jaar3">: <input type="text" name ="ec3">.
+                                    Behaalde EC's in jaar <input type="text" name ="jaar4">: <input type="text" name ="ec4">.
+                                    Behaalde EC's in jaar <input type="text" name ="jaar5">: <input type="text" name ="ec5">.
+                                    Behaalde EC's in jaar <input type="text" name ="jaar6">: <input type="text" name ="ec6">.
+                                    Behaalde EC's in jaar <input type="text" name ="jaar7">: <input type="text" name ="ec7">.
                                 </label>
 
                             <br>
