@@ -246,10 +246,12 @@
                 <input type="file" name="topsport" />
                 <br><?php } ?>
                 <br>
-                <input type="submit" />
+                <input type="submit" class="btn btn-success" value = "Opslaan" />
             </form>
             
-            
+            <b> Sla eerst op en ga dan pas naar volgende!</b> <br> <br>
+
+            <a href="../dashboard.php" class="btn btn-primary">Volgende</a>
             <!--login table end-->
         
         </div>
