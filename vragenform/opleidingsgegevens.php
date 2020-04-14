@@ -37,7 +37,7 @@
                         <br>
                         <label>Sta jij op dit moment ingeschreven bij NHL Stenden?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg1_err)) ? 'has-error' : ''; ?>" name="inschrijving" required>
-                            <option>Select option:</option>
+                            <option>Selecteer een optie:</option>
                             <option>Ja</option>
                             <option>Nee</option>
                         </select>
@@ -51,7 +51,7 @@
                         <br>
                         <label>Welke opleidingvariant volg jij?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg3_err)) ? 'has-error' : ''; ?>" name="opleidingvar" required>
-                            <option>Select option:</option>
+                            <option>Selecteer een optie:</option>
                             <option> Voltijd </option>
                             <option> Deeltijd </option>
                             <option> Duaal </option>
@@ -67,7 +67,7 @@
                         <br>
                         <label>Welke studiejaar zit jij?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg4_err)) ? 'has-error' : ''; ?>" name="studiejaar" required>
-                            <option>Select option:</option>
+                            <option>Selecteer een optie:</option>
                             <option> 1 </option>
                             <option> 2 </option>
                             <option> 3 </option>
@@ -78,7 +78,7 @@
                         <br>
                         <label>Heb je de studie tussendoor onderbroken?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg5_err)) ? 'has-error' : ''; ?>" name="onderbr" required>
-                            <option>Select option:</option>
+                            <option>Selecteer een optie:</option>
                             <option> Ja </option>
                             <option> Nee </option>
                         </select>
@@ -86,7 +86,7 @@
                         <br>
                         <label>Heb jij je gedurende de studieonderbreking ook uitgeschreven bij NHL Stenden?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg6_err)) ? 'has-error' : ''; ?>" name="uitschr" required>
-                            <option>Select option:</option>
+                            <option>Selecteer een optie:</option>
                             <option> Ja </option>
                             <option> Nee </option>
                         </select>

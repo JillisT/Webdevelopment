@@ -86,7 +86,7 @@
                         <h3> Door decaan in te vullen data: </h3>
                         <div class="form-group">
                             <label>
-                                Melding behandeld door studentendecaan (naam)<b style="color: red">*</b>
+                                Naam van de decaan<b style="color: red">*</b>
                             </label>
                             <input type="text" name="decaannaam" class="form-control" placeholder="Naam decaan" required>
                         </div>
@@ -94,8 +94,16 @@
     
                         <div class="form-group">
                             <label>
-                                Datum melding<b style="color: red">*</b>
-                            </label>
+                                Datum melding<b style="color: red">*</b></label>
+                                <div class="btn-group" style="float: right;" >
+                                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                        <i class="fa fa-info-circle"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                    </div>
+                                </div>
+                            
                             <input type="text" name="datmeldingdec" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
@@ -105,14 +113,32 @@
                             <label>
                                 Wanneer is het probleem begonnen?<b style="color: red">*</b>
                             </label>
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                </div>
+                            </div>
                             <input type="text" name="datbegin" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                            <br>
                             <label>
                                 Tot wanneer speelde het probleem?
                             </label>
+                            
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                </div>
+                            </div>
                             <input type="text" name="dateinde" class="form-control" placeholder="JJJJ-MM-DD"
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
-                        </div>
+                        
                         <br>
 
                         <div class="form-group">

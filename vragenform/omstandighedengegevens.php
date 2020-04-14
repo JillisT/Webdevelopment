@@ -46,7 +46,7 @@
 
                         <label>Onder welk stelsel van DUO val jij?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg7_err)) ? 'has-error' : ''; ?>" name="duo" required>
-                            <option>Select option:</option>
+                            <option>Selecteer een optie:</option>
                             <option>Prestatiebeurs</option>
                             <option>Leenstelsel (per 1 september 2015)</option>
                         </select>
@@ -56,23 +56,26 @@
 
                         <label>Heb je recht (gehad) op een extra jaar studiefinanciering/aanvullende beurs via DUO?<b style="color: red">*</b></label>
                         <select class="form-control <?php echo (!empty($leeg8_err)) ? 'has-error' : ''; ?>" name="extrafin" required>
-                            <option>Select option:</option>
+                            <option>Selecteer een optie:</option>
                             <option>Ja</option>
                             <option>Nee</option>
                         </select>
                         <br>
-<!--                        Bij ja, moet een bewijsstuk!-->
-
-<!--                         insert add option here -->
-<!--                        <input type="image" name="bewijsstud" class="form-control" placeholder="Bewijs extra studiefinanciering">-->
-<!--                        <br>-->
-    
 
                         <div class="form-group">
                             <label>
                                 Indien je een extra jaar studiefinanciering hebt
-                                aangevraagd, per wanneer is deze ingegaan? Vermeld
+                                aangevraagd, per wanneer is deze ingegaan? Vermeld de
                                 datum.
+                                
+                                <div class="btn-group" style="float: right;" >
+                                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                        <i class="fa fa-info-circle"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                    </div>
+                                </div>
 
                             </label>
                             <input type="text" name="finstart" class="form-control" placeholder="JJJJ-MM-DD"
@@ -95,7 +98,7 @@
                                 Profileringsfonds ontvangen?<b style="color: red">*</b>
                             </label>
                             <select class="form-control <?php echo (!empty($leeg9_err)) ? 'has-error' : ''; ?>" name="ondgehad" required>
-                                <option>Select option:</option>
+                                <option>Selecteer een optie:</option>
                                 <option>Ja</option>
                                 <option>Nee</option>
                             </select>
@@ -117,9 +120,15 @@
                         <div class="form-group">
                             <label>
                                 Als je eerder financiële ondersteuning uit het
-                                Profileringsfonds ontvangen, welk academisch jaar was dit. (20XX/20XX)
-                                <br>
-                                (Als dit niet van toepassing is laat je dit veld leeg!)
+                                Profileringsfonds ontvangen, welk academisch jaar was dit.
+                                <div class="btn-group" style="float: right;" >
+                                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                        <i class="fa fa-info-circle"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" > Vul in als 20XX/20XX (bijv. 2018/2019) .Als dit niet van toepassing is, laat he het veld leeg.</a>
+                                    </div>
+                                </div>
                             </label>
                             <input type="text" name="jaargehad" class="form-control" placeholder="20XX/20XX"
                             >
@@ -136,11 +145,27 @@
                             <label>
                                 Wanneer vond deze plaats?<b style="color: red">*</b>
                             </label>
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                </div>
+                            </div>
                             <input type="text" name="beginom" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                             <label>
                                 En wanneer was dit geëindigd?<b style="color: red">*</b>
                             </label>
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                </div>
+                            </div>
                             <input type="text" name="eindeom" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
@@ -153,11 +178,27 @@
                             <label>
                                 Bij decaan op:<b style="color: red">*</b>
                             </label>
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                </div>
+                            </div>
                             <input type="text" name="datumdec" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                             <label>
                                 Bij studiebegeleider op:<b style="color: red">*</b>
                             </label>
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                </div>
+                            </div>
                             <input type="text" name="datumstudbeg" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
@@ -170,11 +211,27 @@
                             <label>
                                 Bij decaan op:<b style="color: red">*</b>
                             </label>
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                </div>
+                            </div>
                             <input type="text" name="datumdec2" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                             <label>
                                 Bij studiebegeleider op:<b style="color: red">*</b>
                             </label>
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                </div>
+                            </div>
                             <input type="text" name="datumstudbeg2" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
@@ -195,6 +252,14 @@
                             <label>
                                 Wat is de totale duur van de vertraging?<b style="color: red">*</b>
                             </label>
+                            <div class="btn-group" style="float: right;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul de totale vertraging in maanden in. </a>
+                                </div>
+                            </div>
                             <input type="text" name="vertragingduur" class="form-control" placeholder="Vertragings duur" required>
                         </div>
                         <br>
@@ -213,7 +278,16 @@
                                 Op welke wijze heb je geprobeerd de negatieve gevolgen van de bijzondere omstandigheid voor
                                 jouw studie dan wel studiefinanciering zoveel mogelijk te beperken dan wel te voorkomen
                                 (VB: raadplegen decaan, tussentijds uitschrijven/stopzetten studiefinanciering)?<b style="color: red">*</b>
+                                <div class="btn-group" style="float: right;" >
+                                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                        <i class="fa fa-info-circle"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" >Bijvoorbeeld door hetraadplegen van een decaan, tussentijds uitschrijven/stopzetten studiefinanciering</a>
+                                    </div>
+                                </div>
                             </label>
+                            
                             <TEXTAREA Name="vertragingreductie" ROWS="5" COLS="20" class="form-control" placeholder="Acties die ik heb gedaan om vertraging te beperken" required></TEXTAREA>
 <!--                            <input type="text" name="vertragingreductie" class="form-control" placeholder="Acties die ik heb gedaan om vertraging te beperken" required>-->
                         </div>
