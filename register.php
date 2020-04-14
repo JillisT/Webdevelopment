@@ -46,7 +46,7 @@
                         <label>account type:</label><br>
                         <input type="radio"  name="type" value="student" checked="checked">
                         <label for="male">Student</label><br>
-                        <input type="radio"  name="type" value="SLBer">
+                        <input type="radio"  name="type" value="SLB">
                         <label for="female">SLB'er (Studieloopbaanbegeleider)</label><br>
                         <input type="radio"  name="type" value="decaan">
                         <label for="other">Decaan</label>

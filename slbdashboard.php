@@ -6,6 +6,9 @@
         if(!isset($_SESSION["loggedin"])){
             header("location: index.php");
         }
+        if($_SESSION["type"] !== "SLB"){
+            header("location: dashboard.php");
+        }
         require "include/stylesheets.php";
         include "DataBase/connectToDatabase.php";
     ?>

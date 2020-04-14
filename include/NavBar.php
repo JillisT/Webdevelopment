@@ -24,7 +24,7 @@ if (isset($_SESSION["loggedin"])) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <?php
-                        if ($_SESSION["type"] !== "admin") {
+                        if ($_SESSION["type"] !== "admin" && $_SESSION["type"] !== "decaan" && $_SESSION["type"] !== "SLB") {
                             ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="dashboard.php">Dashboard</a>
@@ -40,7 +40,7 @@ if (isset($_SESSION["loggedin"])) {
                         </li>
 
                         <?php
-                        if (($_SESSION["type"]) === "admin") {
+                        if ($_SESSION["type"] === "admin") {
                             ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="register.php">Maak een account</a>
@@ -52,10 +52,13 @@ if (isset($_SESSION["loggedin"])) {
                         }
                         ?>
                         <?php
-                        if (($_SESSION["type"]) === "decaan") {
+                        if ($_SESSION["type"] === "decaan" || $_SESSION["type"] === "SLB" ) {
                             ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="register.php">Maak een account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="slbdashboard.php">Dashboard</a>
                             </li>
                             <?php
                         }
@@ -110,9 +113,6 @@ if (isset($_SESSION["loggedin"])) {
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.php">Log in</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dropdown.php">Dropdown test</a>
                         </li>
                     </ul>
                 </div>

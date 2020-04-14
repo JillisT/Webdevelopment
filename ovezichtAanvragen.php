@@ -46,12 +46,10 @@ if (($_SESSION["type"]) !== "admin") {
                                     $sql = "SELECT studentnummer FROM decaan WHERE ingevuld = 'ja'";
 
                                     if ($stmt = $conn->prepare($sql)) {
-                                        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
                                         if ($stmt->execute()) {
                                             if ($sql === 'ja') {
                                                 $sql = "SELECT studentnummer FROM slb WHERE ingevuld = 'ja'";
                                                 if ($stmt = $conn->prepare($sql)) {
-                                                    $stmt->bindParam(":id", $id, PDO::PARAM_INT);
                                                     if ($stmt->execute()) {
                                                         if ($sql === 'ja') {
 

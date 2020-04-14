@@ -9,8 +9,12 @@
     if ($_SESSION["type"] === "admin") {
         header("location: ovezichtAanvragen.php");
     }
+    if ($_SESSION["type"] === "SLB") {
+        header("location: slbdashboard.php");
+    }
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
+    $id = $_SESSION["ID"];
     ?>
     <title>dashboard</title>
 </head>
@@ -127,7 +131,7 @@
             </td>
             <h3 class="mt-5">Overzicht</h3>
             <div class="col-sm-12 col-md-12">
-                <div class="card" style="height: 400px;">
+                <div class="card" style="min-height: 400px;">
                     <div class="row">
                         <div class="col-sm-2 col-md-6">
                             <br>
@@ -177,18 +181,27 @@
                             <?php
                             if (!empty($num)) {
                                 ?>
+
                                 <form action="include/aanvraagVerwijderen.script.php" method="post">
                                     <button class="btn btn-primary"
-                                            style="margin-top: 330px; margin-right: 30px; margin-left: 10px;"
+                                            style="margin-top: 30px; margin-right: 30px; margin-left: 10px;"
                                             type="submit">Aanvraag verwijderen
                                     </button>
                                 </form>
+                                <form action="Datascripts/formHervatten.php" method="post">
+                                    <button class="btn btn-primary"
+                                            style="margin-top: 30px; margin-left: 10px;"
+                                            type="submit">Aanvraag hervatten
+                                    </button>
+                                </form>
                                 <?php
-                            } else {
+                                 } else {
                                 ?>
+
+
                                 <form action="include/aanvraagAanmaken.script.php" method="post">
                                     <button class="btn btn-primary"
-                                            style="margin-top: 330px; margin-right: 30px; margin-left: 10px;"
+                                            style="margin-top: 30px; margin-right: 30px; margin-left: 10px;"
                                             type="submit">Nieuwe aanvraag
                                     </button>
                                 </form>
