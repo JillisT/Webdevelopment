@@ -4,6 +4,20 @@
     session_start();
     
     
+    if (isset($_FILES['dokverklaring']))
+    {
+        $errors = array();
+        $file_name = $_FILES['dokverklaring']['name'];
+        $file_size = $_FILES['dokverklaring']['size'];
+        $file_tmp = $_FILES['dokverklaring']['tmp_name'];
+        $file_type = $_FILES['dokverklaring']['type'];
+        $extension = pathinfo($_FILES["dokverklaring"]["name"], PATHINFO_EXTENSION); // jpg
+        $naam = "Dokterverklaring" . '.' . $extension;
+        
+        move_uploaded_file($file_tmp, "../Bestanden/" . $naam);
+    }
+    
+    
     if (isset($_POST['inschrijving'], $_POST['opleiding'], $_POST['opleidingvar'], $_POST['startdatum'], $_POST['studiejaar'],
               $_POST['onderbr'], $_POST['uitschr'], $_POST['andereopl'], $_POST['andereopl2'], $_POST['studvertr']))
     {

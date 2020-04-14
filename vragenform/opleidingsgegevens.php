@@ -115,7 +115,8 @@
                         <label> NB: Studenten die bestuurslid zijn van een erkende studentenvereniging, zoals benoemd in
                             Regeling Profileringsfonds, Artikel 4.1 lid 2a worden via hun erkende studentenverenging
                             geïnformeerd over hoe ze aanspraak kunnen maken op financiële ondersteuning. </label>
-
+    
+                        <input type="file" name="dokverklaring" />
 
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary" value="Volgende">

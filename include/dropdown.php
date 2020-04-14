@@ -56,7 +56,9 @@
             }
         });
     });
+    
 </script>
+
 
 <select id="reden" class="form-control <?php echo (!empty($studvertr_err)) ? 'has-error' : ''; ?>" name="studvertr" required>
     <option value="1" selected>Ziekte</option>
@@ -70,10 +72,23 @@
 </select>
 <div id="uploads"></div>
 
-
 <div id="1">
+<!--    --><?php
+//        $id = $_SESSION["ID"];
+//
+//        if (isset($_FILES['dokverklaring']))
+//        {
+//            $file_name = "test";
+//            $file_tmp = $_FILES['dokverklaring']['tmp_name'];
+//            move_uploaded_file($file_tmp, "Bestanden/" . $file_name);
+//        }
+//
+//    ?>
     <p>Upload: Verklaring van een arts, een andere hulpverlener of bewijs uit medisch dossier.</p>
     <p>*Informatie die voor de aanvraag niet van belang is, mag worden afgeschermd.</p>
+<!--    <form action="../Datascripts/addopleiding.php" method="POST" enctype="multipart/form-data">-->
+<!--        <input type="file" name="dokverklaring" />-->
+<!--    </form>-->
     <p>Upload: Bericht van afwijzing of toekenning door DUO van een extra jaar studiefinanciering.</p>
     <p>Upload: Leenfase: screenshot/print waaruit blijkt wat je van DUO ontvangt.</p>
     <p>*Aanvullende beurs is hierbij van belang.</p>

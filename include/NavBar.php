@@ -67,7 +67,7 @@ if (isset($_SESSION["loggedin"])) {
                             <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="include/loguit.script.php">log uit</a>
+                            <a class="nav-link" href="include/loguit.script.php">Log uit</a>
                         </li>
                     </ul>
                 </div>

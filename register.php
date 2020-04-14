@@ -59,14 +59,14 @@
         </div>
         <!-- container body end -->
 
+        </div>
+        <!-- continer body end -->
+
     </div>
-    <!-- continer body end -->
+    <!-- body end -->
 
-</div>
-<!-- body end -->
-
-<!-- white space links -->
-<div class="col-lg-2"></div>
+    <!-- white space links -->
+    <div class="col-lg-2"></div>
 </div>
 <!-- row end -->
 </body>
