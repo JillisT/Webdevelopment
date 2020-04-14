@@ -30,7 +30,7 @@
                 <div class="col-lg-6"></div>
                 <div class="wrapper col-sm-8 col-md-12" style="margin-top: 50px;">
                     <h2>Opleidingsgegevens</h2>
-                    <form action="../Datascripts/addopleiding.php" method="post">
+                    <form action="../Datascripts/addopleiding.php" method="post" enctype="multipart/form-data">
 
                         <br>
                         <h5>Alles met een "<b style="color: red">*</b>" is verplicht</h5>
@@ -110,17 +110,6 @@
                         <?php
                         include "../include/dropdown.php";
                         ?>
-
-                        
-                        <label> NB: Studenten die bestuurslid zijn van een erkende studentenvereniging, zoals benoemd in
-                            Regeling Profileringsfonds, Artikel 4.1 lid 2a worden via hun erkende studentenverenging
-                            geïnformeerd over hoe ze aanspraak kunnen maken op financiële ondersteuning. </label>
-
-
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Volgende">
-                        </div>
-                    </form>
                 </div>
             </div>
             <!--login table end-->
