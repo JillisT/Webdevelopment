@@ -12,7 +12,7 @@
         require "include/stylesheets.php";
         include "DataBase/connectToDatabase.php";
     ?>
-    <title>dashboard</title>
+    <title>Dashboard</title>
 </head>
 
 <body>

@@ -246,7 +246,7 @@
                         <br>
                         <br>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Submit">
+                            <input type="submit" class="btn btn-primary" value="Opslaan en verzenden">
                         </div>
                     </form>
                 </div>

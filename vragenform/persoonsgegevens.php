@@ -90,7 +90,7 @@
                         <br>
                         <br>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Opslaan" >
+                            <input type="submit" class="btn btn-primary" value="Volgende" >
                         </div>
                     </form>
                 </div>
