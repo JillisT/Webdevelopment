@@ -27,8 +27,8 @@
             ?>
             <!--login table start-->
             <div class="row">
-                <div class="col-lg-6"></div>
-                <div class="wrapper col-sm-8 col-md-12" style="margin-top: 50px;">
+                <div class="col-lg-3"></div>
+                <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
                     <h2>Opleidingsgegevens</h2>
                     <form action="../Datascripts/addopleiding.php" method="post" enctype="multipart/form-data">
 
