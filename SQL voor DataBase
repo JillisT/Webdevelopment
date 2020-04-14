@@ -31,7 +31,7 @@ create table student
     roepnaam           tinytext     null,
     klassennaam        varchar(30)  null,
     geboortedatum      date         null,
-    adres              varchar(30)  null,
+    adres              varchar(225)  null,
     telefoonnummer     int          null,
     email              varchar(30)  null,
     bsn                int          null,
