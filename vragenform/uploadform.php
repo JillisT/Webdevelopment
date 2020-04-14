@@ -188,7 +188,7 @@
             ?>
             <!--login table start-->
             
-            <form action="../dashboard.php" method="POST" enctype="multipart/form-data">
+            <form action="" method="POST" enctype="multipart/form-data">
     
                 <?php
                     if($reden == "1" || $reden == "3"){
@@ -246,7 +246,7 @@
                 <input type="file" name="topsport" />
                 <br><?php } ?>
                 <br>
-                <input type="submit"/>
+                <input type="submit" />
             </form>
             
             
