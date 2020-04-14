@@ -150,8 +150,6 @@
                                             <p><?php echo $row["roepnaam"]; ?></p>
                                             <label>Geboortedatum:</label>
                                             <p><?php echo $row["geboortedatum"]; ?></p>
-                                            <label>Klas:</label>
-                                            <p><?php echo $row["klassennaam"]; ?></p>
                                             <label>Adres/Postcode/Woonplaats:</label>
                                             <p><?php echo $row["adres"]; ?></p>
                                             <label>Telefoonnummer:</label>

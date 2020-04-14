@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Testbestanden/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/Testbestanden/Upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/dropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/dropdown.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vragenform/opleidingsgegevens.php" beforeDir="false" afterPath="$PROJECT_DIR$/vragenform/opleidingsgegevens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datascripts/addpersoons.php" beforeDir="false" afterPath="$PROJECT_DIR$/Datascripts/addpersoons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vragenform/persoonsgegevens.php" beforeDir="false" afterPath="$PROJECT_DIR$/vragenform/persoonsgegevens.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,22 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:DataDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:DataDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2eeedc78" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:DataDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@74cd02a3" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -130,6 +146,7 @@
       <workItem from="1586851014430" duration="1243000" />
       <workItem from="1586858308825" duration="2085000" />
       <workItem from="1586862693611" duration="3210000" />
+      <workItem from="1586881420798" duration="803000" />
     </task>
     <task id="LOCAL-00001" summary="index aangemaakt (test of connectie is gelukt)">
       <created>1584608722094</created>
@@ -236,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586873797478</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Gedaan wat ik kon - uploaden">
+      <created>1586881537763</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586881537763</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +281,8 @@
     <MESSAGE value="sessie reset" />
     <MESSAGE value="fixes" />
     <MESSAGE value="dashboard fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard fix" />
+    <MESSAGE value="Gedaan wat ik kon - uploaden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gedaan wat ik kon - uploaden" />
   </component>
   <component name="WindowStateProjectService">
     <state x="742" y="212" width="679" height="815" key="#PHP" timestamp="1586775455502">
@@ -284,12 +309,12 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="769" y="305" width="631" height="631" key="#inkijk_form.php/0.0.1920.1054@0.0.1920.1054" timestamp="1586775456594" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1586873797167">
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2" timestamp="1586881537427">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="532" y="125" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.1054@0.0.1920.1054" timestamp="1586852291920" />
     <state x="532" y="83" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.888@0.0.1920.888" timestamp="1586866052186" />
-    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1586873797167" />
+    <state x="532" y="113" width="850" height="802" key="CommitChangelistDialog2/0.0.1920.949@0.0.1920.949" timestamp="1586881537427" />
     <state x="184" y="75" width="1540" height="737" key="DiffContextDialog" timestamp="1586865928146">
       <screen x="0" y="0" width="1920" height="888" />
     </state>
@@ -341,15 +366,16 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="708" y="239" width="493" height="570" key="RollbackChangesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1585563185976" />
-    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1586873804031">
+    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2" timestamp="1586881543494">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="555" y="263" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1054@0.0.1920.1054" timestamp="1586852304840" />
-    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1586873804031" />
-    <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586798897765">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="555" y="237" width="804" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.949@0.0.1920.949" timestamp="1586881543494" />
+    <state x="839" y="383" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586881916328">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="839" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1054@0.0.1920.1054" timestamp="1586798897765" />
+    <state x="839" y="383" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.949@0.0.1920.949" timestamp="1586881916328" />
     <state x="721" y="356" width="471" height="335" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1585054507718">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
@@ -377,12 +403,12 @@
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.949@0.0.1920.949" timestamp="1584897567175" />
-    <state x="643" y="289" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1586873114736">
+    <state x="643" y="289" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1586881577090">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586858321298" />
     <state x="643" y="270" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.888@0.0.1920.888" timestamp="1586865939392" />
-    <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog/0.0.1920.949@0.0.1920.949" timestamp="1586873114736" />
+    <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog/0.0.1920.949@0.0.1920.949" timestamp="1586881577090" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1586785492265">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
