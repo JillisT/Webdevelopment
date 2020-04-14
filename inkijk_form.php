@@ -4,7 +4,6 @@
     session_start();
     require "include/stylesheets.php";
     include "DataBase/connectToDatabase.php";
-    include "AdminDashboardScripts/Get_all_info.php";
     $id = trim($_GET["id"]);
     ?>
     <title>Persoonsgevens</title>
@@ -31,6 +30,7 @@
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
 
+
                     <!-- Persoonsgegevens -->
                     <tbody>
                     <?php
@@ -42,6 +42,125 @@
                             if ($stmt->rowCount() > 0) {
                                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                                     ?>
+
+                                    <?php
+                                    $stud = $row["studentnummer"];
+                                    $filename = "Bestanden/$stud.studieplan.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.studieplan.png"
+                                           download="">
+                                            <input type="button" value="Download studieplan"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+                                    <br>
+                                    <br>
+                                    <?php
+                                    $filename = "Bestanden/$stud.studiepunten.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.studiepunten.png"
+                                           download="">
+                                            <input type="button" value="Download studiepunten document"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+                                    <br>
+                                    <br>
+                                    <?php
+                                    $filename = "Bestanden/$stud.arts.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.arts.png"
+                                           download="">
+                                            <input type="button" value="Download arts document"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+                                    <br>
+                                    <br>
+                                    <?php
+                                    $filename = "Bestanden/$stud.duoaan.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.duoaan.png"
+                                           download="">
+                                            <input type="button" value="Download duo begin"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+                                    <br>
+                                    <br>
+                                    <?php
+                                    $filename = "Bestanden/$stud.duofin.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.duofin.png"
+                                           download="">
+                                            <input type="button" value="Download duo einde"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+                                    <br>
+                                    <br>
+                                    <?php
+                                    $filename = "Bestanden/$stud.gebkaart.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.gebkaart.png"
+                                           download="">
+                                            <input type="button" value="Download geboortekaartje"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+                                    <br>
+                                    <br>
+                                    <?php
+                                    $filename = "Bestanden/$stud.medisch.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.medisch.png"
+                                           download="">
+                                            <input type="button" value="Download medisch bewijs"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+                                    <br>
+                                    <br>
+                                    <?php
+                                    $filename = "Bestanden/$stud.studeerbaar.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.studeerbaar.png"
+                                           download="">
+                                            <input type="button" value="Download studeerbaar bewijs"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+                                    <br>
+                                    <br>
+                                    <?php
+                                    $filename = "Bestanden/$stud.topsport.png";
+                                    if(file_exists($filename)) {
+                                        ?>
+                                        <a href="Bestanden/<?php echo $row["studentnummer"] ?>.topsport.png"
+                                           download="">
+                                            <input type="button" value="Download topsport bewijs"/>
+                                        </a>
+                                        <?php
+                                    }
+                                    ?>
+
+
                                     <h3>Persoonlijke gegevens</h3>
                                     <!-- TABLE DATA -->
                                     <label>Achternaam:</label>
@@ -67,7 +186,7 @@
                     }
                     ?>
                     </tbody>
-<br>
+                    <br>
                     <!-- Opleiding -->
                     <tbody>
                     <?php
@@ -79,6 +198,7 @@
                             if ($stmt->rowCount() > 0) {
                                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                                     ?>
+
                                     <h3>Opleiding gegevens</h3>
                                     <!-- TABLE DATA -->
                                     <label>Ingeschreven:</label>
@@ -174,9 +294,9 @@
                     if ($stmt = $conn->prepare($sql)) {
                         $stmt->bindParam(":id", $id, PDO::PARAM_INT);
                         if ($stmt->execute()) {
-                            if($stmt === 'ja'){
+                            if ($stmt === 'ja') {
                                 echo "ja";
-                            }else echo "nee";
+                            } else echo "nee";
                         }
                     }
                     ?>
@@ -187,9 +307,9 @@
                     if ($stmt = $conn->prepare($sql)) {
                         $stmt->bindParam(":id", $id, PDO::PARAM_INT);
                         if ($stmt->execute()) {
-                            if($stmt === 'ja'){
+                            if ($stmt === 'ja') {
                                 echo "ja";
-                            }else echo "nee";
+                            } else echo "nee";
                         }
                     }
                     ?>

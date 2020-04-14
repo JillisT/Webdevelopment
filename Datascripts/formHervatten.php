@@ -3,7 +3,6 @@ include "../DataBase/connectToDatabase.php";
 // Persoonlijke
 session_start();
 $id = $_SESSION["ID"];
-
 // controlleer student form
 $sql = "SELECT id, ingevuld FROM student where ingevuld = 'ja'";
 $result = $conn->query($sql);
