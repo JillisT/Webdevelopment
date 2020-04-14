@@ -110,6 +110,29 @@
                         <?php
                         include "../include/dropdown.php";
                         ?>
+                        <label> NB: Studenten die bestuurslid zijn van een erkende studentenvereniging, zoals benoemd in
+                            Regeling Profileringsfonds, Artikel 4.1 lid 2a worden via hun erkende studentenverenging
+                            geïnformeerd over hoe ze aanspraak kunnen maken op financiële ondersteuning. </label>
+
+                        <?php
+
+                        if (isset($_FILES['image'])) {
+                            $errors = array();
+                            $file_name = $_FILES['image']['name'];
+                            $file_size = $_FILES['image']['size'];
+                            $file_tmp = $_FILES['image']['tmp_name'];
+                            $file_type = $_FILES['image']['type'];
+                            $extension = pathinfo($_FILES["image"]["name"], PATHINFO_EXTENSION);
+                            $naam = "test" . '.' . $extension;
+
+                            move_uploaded_file($file_tmp, "../Testbestanden/images/" . $naam);
+                        }
+                        ?>
+
+                        <input type="file" name="image"/>
+                        <input type="submit" value="Volgende"/>
+
+                    </form>
                 </div>
             </div>
             <!--login table end-->
