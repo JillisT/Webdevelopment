@@ -1,14 +1,6 @@
 Hier worden alle SQL queries ingezet zodat ze makkelijk te copieen en plakken zijn.password
 Zo houden we de Databases tussen ons hetzelfde.
 
-<anmaken DB>
-Naam DB: DataDB
-Tabels: users, aanvragen
-notes:
-- Als je wilt inloggen als administratie, maak via de site een account (ivp met hashed password) en verander in de database het type naar admin
-
-kopie dit:
-
 create schema DataDB;
 
 use DataDB;
@@ -29,17 +21,16 @@ create table student
         primary key,
     achternaam         tinytext     null,
     roepnaam           tinytext     null,
-    klassennaam        varchar(30)  null,
     geboortedatum      date         null,
-    adres              varchar(30)  null,
+    adres              varchar(225)  null,
     telefoonnummer     int          null,
-    email              varchar(30)  null,
+    email              varchar(50)  null,
     bsn                int          null,
     iban               varchar(30)  null,
     ingevuld           varchar(2)
 );
 
-create table opleiding
+create table opleidingdis
 (
     ingeschreven       tinytext null,
     opleiding          tinytext null,
