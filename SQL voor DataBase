@@ -39,7 +39,7 @@ create table student
     ingevuld           varchar(2)
 );
 
-create table opleiding
+create table opleidingdis
 (
     ingeschreven       tinytext null,
     opleiding          tinytext null,
