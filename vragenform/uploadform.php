@@ -41,7 +41,6 @@
                     while ($row = $result->fetch(PDO::FETCH_ASSOC))
                     {
                         $reden = $row["reden"];
-                        echo $reden;
                     }
                 }
                 else $studentnummer = "Onbekend";
@@ -189,11 +188,10 @@
             ?>
             <!--login table start-->
             
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form action="../dashboard.php" method="POST" enctype="multipart/form-data">
     
                 <?php
-                    echo $reden;
-                    if($reden === "1" || "3");{
+                    if($reden == "1" || $reden == "3"){
                     ?>
                 <label> Verklaring van een arts, een andere hulpverlener of bewijs uit medisch dossier.
                     Informatie die voor de aanvraag niet van belang is, mag worden afgeschermd.</label><br>
@@ -201,13 +199,13 @@
                 <br>
                 <?php } ?>
                 <?php
-                    if($reden == "1" || '3');{
+                    if($reden == "1"|| $reden == "3" ){
                 ?>
                 <label>Bericht van afwijzing of toekenning door DUO van een extra jaar studiefinanciering. </label><br>
                 <input type="file" name="duofin" />
                 <br> <?php } ?>
                 <?php
-                    if($reden == "1" || '3'); {
+                    if($reden == "1" || $reden == "3") {
                 ?>
                 <label> Leenfase: screenshot/print waaruit blijkt wat je van DUO ontvangt (aanvullende
                     beurs is hierbij van belang)</label><br>
@@ -220,13 +218,13 @@
                 <input type="file" name="studiepunten" />
                 <br>
                 <?php
-                    if($reden === "2");{
+                    if($reden == "2"){
                 ?>
                 <label> Schriftelijk bewijsstuk (bijv. geboortekaartje) </label><br>
                 <input type="file" name="gebkaart" />
                 <br><?php } ?>
                 <?php
-                    if($reden ==  "3");{
+                    if($reden ==  "4"){
                 ?>
                 <label> Schriftelijke bewijsstukken (bijv. verklaring van hulpverlener of familieleden. Of
                     bewijsstuk uit een (medisch) dossier. Informatie die voor de aanvraag niet van belang
@@ -235,18 +233,19 @@
                 <input type="file" name="medisch" />
                 <br><?php } ?>
                 <?php
-                    if($reden == "1" || '3');{
+                    if($reden == "5" ){
                 ?>
                 <label> Bewijsstukken (bijvoorbeeld mailwisselingen, brieven) of een verklaring (van docent,
                     teamleider, directeur) waaruit blijkt dat de studie onvoldoende studeerbaar is.</label><br>
                 <input type="file" name="studeerbaar" />
                 <br><?php } ?>
                 <?php
-                    if($reden == "1" || '3'); {
+                    if($reden == "6" ) {
                 ?>
                 <label> Bewijs van erkenning van de topsport status. </label><br>
                 <input type="file" name="topsport" />
                 <br><?php } ?>
+                <br>
                 <input type="submit"/>
             </form>
             

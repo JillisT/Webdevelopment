@@ -89,7 +89,7 @@
                     $stmt->bindParam(":ID", $ID, PDO::PARAM_INT);
                     if ($stmt->execute()) {
                         // Stuur door naar opleidingsgegevens
-                        header("Location: ../dashboard.php");
+                        header("Location: ../vragenform/uploadform.php");
                     }
                 }
 
