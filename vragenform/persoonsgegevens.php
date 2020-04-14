@@ -46,22 +46,39 @@
                         </div>
                         <br>
                         <div class="form-group">
-                            <label>Roepnaam:<b style="color: red">*</b></label>
+                            <label>Roepnaam:<b style="color: red">*</b>
+                                <div class="btn-group" style="position: absolute; right: 20;" >
+                                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                        <i class="fa fa-info-circle"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" > Geef hier je naam zoals jij aangepsroken wil worden.</a>
+                                    </div>
+                                </div></label>
                             <input type="text" name="roepnaam" class="form-control" placeholder="Roepnaam" required>
                         </div>
                         <br>
                         <div class="form-group">
-                            <label>Geboortedatum:<b style="color: red">*</b></label>
+                            <label>Geboortedatum:<b style="color: red">*</b>
+                                <div class="btn-group" style="position: absolute; right: 20;" >
+                                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                        <i class="fa fa-info-circle"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                    </div>
+                                </div>
+                            </label>
                             <input type="text" name="geboortedatum" class="form-control" placeholder="JJJJ-MM-DD" required
                                    pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
                         </div>
-                        <br>
-                        <!-- Staat er niet tussen. Moet dit erbij??? -->
-                        <div class="form-group">
-                            <label>Klas:</label>
-                            <input type="text" name="klas" class="form-control" placeholder="Klas" required>
-                        </div>
-                        <br>
+<!--                        <br>-->
+<!--                        Staat er niet tussen. Moet dit erbij??? -->
+<!--                        <div class="form-group">-->
+<!--                            <label>Klas:</label>-->
+<!--                            <input type="text" name="klas" class="form-control" placeholder="Klas" >-->
+<!--                        </div>-->
+<!--                        <br>-->
                         <!--  -->
                         <label>Adres/Postcode/Woonplaats:<b style="color: red">*</b></label>
                         <div class="form-group">

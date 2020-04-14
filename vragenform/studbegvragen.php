@@ -48,18 +48,36 @@
                                 <div class="form-group">
                                     <label>
                                         Wanneer heeft de student de melding gemaakt over de problemen?<b style="color: red">*</b>
-                                    </label>
+                                        <div class="btn-group" style="position: absolute; right: 20;" >
+                                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                                <i class="fa fa-info-circle"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                            </div>
+                                        </div>
+                                    
                                     <input type="text" name="datmeldingstudbeg" class="form-control" placeholder="JJJJ-MM-DD" required
                                            pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
-                                </div>
+                                    </label></div>
                                 <div class="form-group">
                                     <label>
                                         Wanneer heeft de student de melding gemaakt dat de omstandigheden zijn afgelopen?
-                                    </label>
-
-
+                                        
+                                        <div class="btn-group" style="position: absolute; right: 20;" >
+                                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                                <i class="fa fa-info-circle"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" > Vul de de datum in als: jjjj-mm-dd. Andere formaten worden niet geacepteerd</a>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        
                                     <input type="text" name="dateinde" class="form-control" placeholder="JJJJ-MM-DD"
                                            pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                                    </label>
                                 </div>
 
                                 <div class="form-group">
@@ -73,6 +91,7 @@
 
 
                                 <h3> Studiepunten: </h3>
+                            
                                 <br>
                                 <div class="form-group">
                                     <label>
@@ -106,6 +125,16 @@
                                     <input type="text" name="maandennodig" class="form-control" placeholder="Benodigde maanden" required>
                                 </div>
 
+                            
+                            <div class="btn-group" style="position: absolute; right: 20;" >
+                                <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" aria-label="Right Align">
+                                    <i class="fa fa-info-circle"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" > Vul in het linker vakje het jaar in en in het rechter vakje het aantal ec's</a>
+                                </div>
+                            </div>
+                            <br>
                             <br>
 
                                 <label>
@@ -126,7 +155,7 @@
                                     toets en of tentamen.<b style="color: red">*</b>
                                 </label>
                                 <select class="form-control <?php echo (!empty($leeg10_err)) ? 'has-error' : ''; ?>" name="regeling" required>
-                                    <option>Select option:</option>
+                                    <option>Selecteer een optie:</option>
                                     <option>Volledig overlopen</option>
                                     <option>Herkansing</option>
                                 </select>
@@ -149,7 +178,7 @@
                                 <br>
                                 <div class="form-group">
                                     <label>
-                                        Naam.<b style="color: red">*</b>
+                                        Naam van de studiebegeleider.<b style="color: red">*</b>
                                     </label>
                                     <input type="text" name="naam" class="form-control" placeholder="Naam" required>
                                 </div>
@@ -158,7 +187,7 @@
                                 Functie.<b style="color: red">*</b>
                             </label>
                             <select class="form-control <?php echo (!empty($leeg11_err)) ? 'has-error' : ''; ?>" name="functie" required>
-                                <option>Select option:</option>
+                                <option>Selecteer een optie:</option>
                                 <option>studiebegeleider</option>
                                 <option>coördinator studie(traject)begeleiding</option>
                             </select>

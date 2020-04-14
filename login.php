@@ -35,7 +35,7 @@
                             <i class="fa fa-info-circle"></i>
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" > Vraag aan je decaan om een account aan te maken</a>
+                            <a class="dropdown-item" > Mail de admin om een account aan te maken</a>
                         </div>
                     </div>
                     <form acti

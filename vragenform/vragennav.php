@@ -6,32 +6,32 @@ $leeg1_err = $leeg2_err = $leeg3_err = $leeg4_err = $leeg5_err = $leeg6_err = $s
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
 
-    if ($_POST["inschrijving"] === "Select option:")
+    if ($_POST["inschrijving"] === "Selecteer een optie:")
     {
         $leeg1_err = "selecteer reden van aanvraag.";
     }
 
-    if ($_POST["opleiding"] === "Select option:")
+    if ($_POST["opleiding"] === "Selecteer een optie:")
     {
         $leeg2_err = "selecteer reden van aanvraag.";
     }
 
-    if ($_POST["opleidingvar"] === "Select option:")
+    if ($_POST["opleidingvar"] === "Selecteer een optie:")
     {
         $leeg3_err = "selecteer reden van aanvraag.";
     }
 
-    if ($_POST["studiejaar"] === "Select option:")
+    if ($_POST["studiejaar"] === "Selecteer een optie:")
     {
         $leeg4_err = "selecteer reden van aanvraag.";
     }
 
-    if ($_POST["onderbr"] === "Select option:")
+    if ($_POST["onderbr"] === "Selecteer een optie:")
     {
         $leeg5_err = "selecteer reden van aanvraag.";
     }
 
-    if ($_POST["uitschr"] === "Select option:")
+    if ($_POST["uitschr"] === "Selecteer een optie:")
     {
         $leeg6_err = "selecteer reden van aanvraag.";
     }
@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
 
 
-    if ($_POST["studvertr"] === "Select option:")
+    if ($_POST["studvertr"] === "Selecteer een optie:")
     {
         $studvertr_err = "selecteer reden van aanvraag.";
     }
