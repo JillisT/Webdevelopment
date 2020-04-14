@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad4e49dd-d426-4584-a267-fe05bbe64afd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vragenform/opleidingsgegevens.php" beforeDir="false" afterPath="$PROJECT_DIR$/vragenform/opleidingsgegevens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +29,17 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DataDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="DataDB: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -78,7 +87,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:DataDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:DataDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1bbaa304" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -237,7 +256,8 @@
     <MESSAGE value="Fix. Hoop ik..." />
     <MESSAGE value="Fix2 hopelijk" />
     <MESSAGE value="sessie reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="sessie reset" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="742" y="212" width="679" height="815" key="#PHP" timestamp="1586775455502">
@@ -348,20 +368,21 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="98" y="99" width="1724" height="857" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586859939260" />
-    <state x="98" y="99" width="1724" height="857" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586859866211">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="98" y="89" width="1724" height="772" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586873789644">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="98" y="99" width="1724" height="857" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586859866211" />
+    <state x="98" y="89" width="1724" height="772" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.949@0.0.1920.949" timestamp="1586873789644" />
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584897567175">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="739" y="396" width="439" height="157" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.949@0.0.1920.949" timestamp="1584897567175" />
-    <state x="643" y="270" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1586865939392">
-      <screen x="0" y="0" width="1920" height="888" />
+    <state x="643" y="289" width="627" height="409" key="git4idea.merge.GitPullDialog" timestamp="1586873114736">
+      <screen x="0" y="0" width="1920" height="949" />
     </state>
     <state x="643" y="321" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586858321298" />
     <state x="643" y="270" width="627" height="409" key="git4idea.merge.GitPullDialog/0.0.1920.888@0.0.1920.888" timestamp="1586865939392" />
-    <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog/0.0.1920.949@0.0.1920.949" timestamp="1586779186976" />
+    <state x="643" y="289" width="627" height="366" key="git4idea.merge.GitPullDialog/0.0.1920.949@0.0.1920.949" timestamp="1586873114736" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1586785492265">
       <screen x="0" y="0" width="1920" height="949" />
     </state>
