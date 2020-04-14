@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="wrapper col-sm-4 col-md-6" style="margin-top: 50px;">
-                    <h2>Login</h2>
+                    <h2>Omstandigheden</h2>
                     <form action="../Datascripts/addomstandigheden.php" method="post">
 
                         <br>
